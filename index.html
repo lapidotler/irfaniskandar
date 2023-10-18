@@ -14,61 +14,147 @@ and open the template in the editor.
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+        
         <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .text-xlarge {
+                font-family: 'Futura XBlk BT', sans-serif;
+                font-weight: 500;
+                font-size: 50px;
+            }
             
+            h2, .text-large {
+                font-family: 'Futura Hv BT', sans-serif;
+                font-weight: 300;
+                font-size: 35px;
+            }
+            
+            .text-xnarrow {
+                font-family: 'Futura BdCn BT', sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+            }
+            
+            p {
+                font-family: 'Nunito Semibold', sans-serif;
+                font-size: 20px;
+            }
+            
+            section {
+                padding: 50px;
+            }
+            
+            .button5 {
+                font-family: 'Futura Hv BT', sans-serif;
+                font-weight: 300;
+                font-size: 25px;
+                
+                border-radius: 25px;
+                background-color: #b08ccd;
+                border-color: #7869b3;
+                
+                width: 600px;
+                height: 40px;
+            }
         </style>
     </head>
     <body>
-        <?php include "phpFile/navbar.php" ?>
+        <div class="body-content" style="background-color: #dbb5d6">
+            <?php include "phpFile/navbar.php" ?>
 
-        <div class="container text-dark mt-5 mb-5">
-            <div id="content">
-                <h1 style="font-size: 56px;">Contents</h1>
-                <br/>
+            <div class="container-fluid">
+                <!-- Intro Section -->
+                <div class="header flex-column flex-center responsive" style="padding: 50px;">
+                    <p class="text-xlarge">Welcome to the Portfolio</p>
+                    <p class="text-large">First of all, my name is...</p>
+
+                    <img src="images/logo2.png" width="auto" height="250px" alt="Your Image">
+
+                    <p class="text-xnarrow">Interested in what I have to offer? Know more about me and what I do by scrolling down or clicking the arrow below!</p>
+
+                    <a href="#home-about">
+                        <div class="triangle"></div>
+                    </a>
+                </div>
+
+                <!-- About Me Section -->
+                <section class="about-section">
+                    <h2>Who are you?</h2>
+
+                    <p class="text-med">Hello there! My name is Irfan Iskandar. I am currently a student who is studying in their second year at Republic Polytechnic. Right now, I am pursuing a diploma in Digital Design and Development.</p>
+                    <p class="text-med">Passionate about learning, I strive for happiness and excellence through hard work and effort, demonstrating my ability and willingness to prove my abilities.</p>
+                    <p class="text-med">This is my personal portfolio where you could learn more who I am and what I can do.</p>
+                    <p class="text-med">Wish to know more? Click the button below!</p>
+
+                    <button class="button button5" href="aboutUs.html">Learn More >></button>
+                    <div class="about-image">
+                        <img src="images/profile/imgprofile.png" alt="About Me Image">
+                    </div>
+                </section>
+
+                <!-- Portfolio Section -->
+                <section class="portfolio-section">
+                    <h2>Portfolio</h2>
+                    <p>Check out some of my work below.</p>
+
+                    <div class="portfolio-display">
+                        <div class="portfolio-item">
+                            <img src="portfolio-image1.jpg" alt="Portfolio Image 1">
+                            <h3>Project Title 1</h3>
+                            <p>Graphic Design</p>
+                            <p>2022</p>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="portfolio-image2.jpg" alt="Portfolio Image 2">
+                            <h3>Project Title 2</h3>
+                            <p>UI/UX Design</p>
+                            <p>2023</p>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <img src="portfolio-image3.jpg" alt="Portfolio Image 3">
+                            <h3>Project Title 3</h3>
+                            <p>Web Development</p>
+                            <p>2021</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Me Section -->
+                <section class="contact-section">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out to me on social media or via email. I'm always open to new opportunities and collaborations.</p>
+                    <div class="footer-icons">
+                        <a href="#" class="text-dark mx-3"><i class="fab fa-github fa-2x"></i></a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="#" class="text-dark mx-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </section>
             </div>
+
+            <br/><br/>
+            <?php include "phpFile/footer.php" ?>
+            
         </div>
-
-        <main mt-5 mb-5>
-            <div class="intro">
-                <h1>A Web Developer</h1>
-                <p>I am a web developer and I love to create websites.</p>
-                <button>Learn More</button>
-            </div>
-
-            <div class="achievements">
-                <div class="work">
-                    <i class="fas fa-atom"></i>
-                    <p class="work-heading">Projects</p>
-                    <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
-                </div>
-
-                <div class="work">
-                    <i class="fas fa-skiing"></i>
-                    <p class="work-heading">Skills</p>
-                    <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
-                </div>
-
-                <div class="work">
-                    <i class="fas fa-ethernet"></i>
-                    <p class="work-heading">Network</p>
-                    <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
-                </div>
-
-            </div>
-
-            <div class="about-me">
-
-                <div class="about-me-text">
-                    <h2>About Me</h2>
-                    <p>I am a web developer and I love to create websites. I am a very good developer and I am always looking for new projects. I am a very good developer and I am always looking for new projects.</p>
-                </div>
-
-                <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="me">
-            </div>
-        </main>
-
-        <br/><br/>
-        <?php include "phpFile/footer.php" ?>
     </body>
 </html>
