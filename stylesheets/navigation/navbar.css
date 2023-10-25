@@ -1,0 +1,50 @@
+/* Reset some default styles for lists and links */
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Style the custom navigation bar */
+.custom-navbar {
+    background-color: #bbb3d6; /* Set your desired background color */
+    padding: 10px 0;
+}
+
+.custom-navbar-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-brand img {
+    max-height: 70px;
+}
+
+.custom-navbar-links ul {
+    display: flex;
+}
+
+.custom-navbar-links ul li {
+    margin-right: 50px; /* Adjust the spacing between links */
+}
+
+.nav-link {
+    color: #343a40; /* Set your desired text color */
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Futura Hv BT"
+}
+
+.nav-link:hover {
+    color: #7869B3; /* Change the color on hover */
+}

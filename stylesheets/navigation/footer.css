@@ -1,0 +1,59 @@
+.custom-footer {
+    background-color: #edbdb2; /* Background color */
+    padding: 20px 0; /* Adjust the top and bottom padding as needed */
+    color: #343a40; /* Text color */
+    font-size: 16px; /* Font size */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px; /* Set the maximum width */
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 30px; /* Add space between sections */
+}
+
+.footer-title {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px; /* Add space below titles */
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+.footer-list li a {
+    font-family: 'Nunito SemiBold', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #343a40;
+    transition: color 0.3s;
+}
+
+.footer-list li a:hover {
+    color: #B76CAD; /* Change the color on hover */
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around; /* Space icons evenly */
+    margin-top: 20px; /* Add space above icons */
+}
+
+.footer-icons a {
+    color: #343a40; /* Set the color to #343a40 (dark gray) */
+    margin: 0 15px; /* Add some space around each icon */
+}

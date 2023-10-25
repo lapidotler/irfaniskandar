@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 5px;
+    max-width: 1300px;
+}
+
+section {
+    padding: 50px;
+    margin-bottom: 25px;
+}
+
+/* Home Section */
+.text-xlarge {
+    font-family: 'Futura XBlk BT', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+h2, .text-large {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.text-xnarrow {
+    font-family: 'Futura BdCn BT', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Nunito Semibold', sans-serif;
+    font-size: 20px;
+}
+
+.arrow-link {
+    display: inline-block;
+    position: relative;
+}
+
+.triangle {
+    width: 75px;
+    height: 75px;
+    background: #333;
+    clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
+    transition: all 0.5s ease;
+}
+
+
+/* About Section */
+.about-section {
+    background: #DBB5D6;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image {
+    background: white; /* Background color behind the image */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+}
+
+.about-image img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.button5 {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    
+    border-radius: 25px;
+    background-color: #b08ccd;
+    border-color: #7869b3;
+    
+    width: 600px;
+    height: 40px;
+}
+
+
+/* Contact Section */
+.contact-icons {
+    display: flex;
+    justify-content: space-around; /* Space icons evenly */
+    margin-top: 50px; /* Add space above icons */
+}
+
+.contact-icons a {
+    color: #343a40; /* Set the color to #343a40 (dark gray) */
+    margin: 0 30px; /* Add some space around each icon */
+}
