@@ -20,7 +20,7 @@ and open the template in the editor.
         <div class="body-content" style="background-color: #dbb5d6">
             <!-- Navigation Bar -->
             <header>
-                <nav class="custom-navbar responsive">
+                <nav class="custom-navbar flex-column responsive">
                     <div class="custom-navbar-container">
                         <a class="navbar-brand" href="index.html">
                             <img src="images/logo_main.png" alt="Logo" width="auto" height="100px">
@@ -45,32 +45,36 @@ and open the template in the editor.
 
                     <img src="images/logo2.png" width="auto" height="250px" alt="Your Image">
 
-                    <p class="text-xnarrow">Interested in what I have to offer? Know more about me and what I do by scrolling down or clicking the arrow below!</p>
+                    <p class="text-xnarrow">Interested in what I have to offer? Know more about me by clicking the arrow below!</p>
                     <a href="#home-about" class="arrow-link">
                         <div class="triangle"></div>
                     </a>
                 </div>
 
                 <!-- About Me Section -->
-                <section class="about-section responsive">
+                <section class="about-section flex-column responsive" id="home-about">
+                    <h2>Who are you?</h2>
+                  
                     <div class="about-container">
                         <div class="about-content">
-                            <h2>Who are you?</h2>
                             <p class="text-med">Hello there! My name is Irfan Iskandar. I am currently a student who is studying in their second year at Republic Polytechnic. Right now, I am pursuing a diploma in Digital Design and Development.</p>
                             <p class="text-med">Passionate about learning, I strive for happiness and excellence through hard work and effort, demonstrating my ability and willingness to prove my abilities.</p>
-                            <p class="text-med">This is my personal portfolio where you could learn more who I am and what I can do.</p>
+                            <p class="text-med">This is my personal portfolio where you could learn more about who I am and what I can do.</p>
                             <p class="text-med">Wish to know more? Click the button below!</p>
                             <button class="button button5" href="aboutUs.html">Learn More >></button>
                         </div>
-
-                        <div class="about-image">
-                            <img src="images/profile/imgprofile.png" alt="About Me Image">
+                
+                        <div class="about-image-container">
+                            <div class="additional-shape"></div>
+                            <div class="image-border">
+                                <img src="images/profile/imgprofile.png" alt="About Me Image">
+                            </div>
                         </div>
                     </div>
                 </section>                
 
                 <!-- Portfolio Section -->
-                <section class="portfolio-section responsive">
+                <section class="portfolio-section flex-column responsive">
                     <h2>Portfolio</h2>
                     <p>Check out some of my work below.</p>
 
@@ -99,7 +103,7 @@ and open the template in the editor.
                 </section>
 
                 <!-- Contact Me Section -->
-                <section class="contact-section responsive">
+                <section class="contact-section flex-column responsive">
                     <h2>Contact Me</h2>
                     <p>If you would like to get in touch with me, feel free to click on any social media icons below!</p>
                     <p>For any other work-related matters, please do <a style="color: #343a40; text-decoration-line: underline;" href="contact.html">email me instead!</a></p>
@@ -116,8 +120,8 @@ and open the template in the editor.
             <br/><br/>
 
             <!-- Footer Bar -->
-            <footer class="custom-footer responsive">
-                <div class="container">
+            <footer class="custom-footer">
+                <div class="container flex-column responsive">
                     <div class="footer-section">
                         <h2 class="footer-title">Webpages</h2>
                         <ul class="footer-list">

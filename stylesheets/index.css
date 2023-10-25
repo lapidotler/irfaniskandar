@@ -57,8 +57,8 @@ p {
 
 /* About Section */
 .about-section {
-    background: #DBB5D6;
-    padding: 20px;
+    background-color: #DBB5D6;
+    padding: 50px;
 }
 
 .about-container {
@@ -66,21 +66,45 @@ p {
     justify-content: space-between;
 }
 
-.about-image {
-    background: white; /* Background color behind the image */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-}
-
-.about-image img {
-    display: block;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
 .about-content {
-    flex: 1;
-    padding: 20px;
+    width: 55%;
+}
+
+.about-image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-border {
+    position: relative;
+    width: 350px; /* Adjust the size of the image border */
+    height: 350px;
+    background-color: #BBB3D9; /* Background color for the image border */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 5px 5px 50px #9B8EC5; /* Add shadow to the image border */
+    bottom: 25px;
+    right: 150px;
+    border-color: #333;
+    border-style: solid;
+}
+
+.image-border img {
+    width: 350px; /* Adjust the size of the image border */
+    height: 350px;
+    border-radius: 15px; /* Add rounded corners */
+    overflow: hidden;
+}
+
+.additional-shape {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: #7869B3; /* Background color for the additional shape */
+    border-radius: 15px; /* Add rounded corners to the shape */
+    bottom: 0px;
+    left: 225px;
+    border-color: #333;
+    border-style: solid;
 }
 
 .button5 {
@@ -92,7 +116,8 @@ p {
     background-color: #b08ccd;
     border-color: #7869b3;
     
-    width: 600px;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width for responsiveness */
     height: 40px;
 }
 
