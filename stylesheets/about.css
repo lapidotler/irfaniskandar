@@ -17,6 +17,12 @@ section {
     margin-bottom: 25px;
 }
 
+h2 {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+
 
 /* About Section */
 .about-section {
@@ -45,8 +51,8 @@ section {
     background-color: #BBB3D9; /* Background color for the image border */
     border-radius: 15px; /* Add rounded corners */
     box-shadow: 5px 5px 50px #9B8EC5; /* Add shadow to the image border */
-    bottom: 25px;
-    right: 150px;
+    bottom: 0px;
+    right: 200px;
     border-color: #333;
     border-style: solid;
 }
@@ -68,18 +74,4 @@ section {
     left: 225px;
     border-color: #333;
     border-style: solid;
-}
-
-.button5 {
-    font-family: 'Futura Hv BT', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    
-    border-radius: 25px;
-    background-color: #b08ccd;
-    border-color: #7869b3;
-    
-    width: 100%;
-    max-width: 600px; /* Adjust the maximum width for responsiveness */
-    height: 40px;
 }
