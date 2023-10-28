@@ -27,7 +27,9 @@ h2 {
 /* About Section */
 .about-section {
     background-color: #DBB5D6;
-    padding: 50px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .about-container {
@@ -51,8 +53,8 @@ h2 {
     background-color: #BBB3D9; /* Background color for the image border */
     border-radius: 15px; /* Add rounded corners */
     box-shadow: 5px 5px 50px #9B8EC5; /* Add shadow to the image border */
-    bottom: 0px;
-    right: 200px;
+    bottom: 25px;
+    right: 175px;
     border-color: #333;
     border-style: solid;
 }
@@ -71,7 +73,7 @@ h2 {
     background-color: #7869B3; /* Background color for the additional shape */
     border-radius: 15px; /* Add rounded corners to the shape */
     bottom: 0px;
-    left: 225px;
+    left: 150px;
     border-color: #333;
     border-style: solid;
 }
