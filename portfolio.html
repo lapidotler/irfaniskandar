@@ -35,47 +35,85 @@
             <h1>My Portfolio</h1>
         </div>
 
-        <div class="main">
-            <div class="section-header">
-                <h2 class="text-xlarge">Portfolio</h2>
-                <div class="filter-content">
-                    <span class="portfolio-filter">All</span>
-                    <span class="portfolio-filter">Web Design</span>
-                    <span class="portfolio-filter">Graphic Design</span>
+        <!-- Portfolio Work Options -->
+        <div class="header" id="portfolio-top">
+            <h1>My Portfolio</h1>
+            <p>Explore my work in the following categories:</p>
+            <div class="portfolio-options">
+                <div class="portfolio-option">
+                    <a href="#web-design-works">Design</a>
+                </div>
+                <div class="portfolio-option">
+                    <a href="#development-works">Development</a>
+                </div>
+                <div class="portfolio-option">
+                    <a href="#other-works">Others</a>
                 </div>
             </div>
-
-            <div class="portfolio-content">
-                <img class="portfolio-content-image" src="project1.jpg" alt="Project 1">
-                <div class="portfolio-text">
-                    <h3 class="text-header">Project 1</h3>
-                    <p class="text-small">Category: Web Design</p>
-                    <p class="text-medium">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-content">
-                <img class="portfolio-content-image" src="project2.jpg" alt="Project 2">
-                <div class="portfolio-text">
-                    <h3 class="text-header">Project 2</h3>
-                    <p class="text-small">Category: Graphic Design</p>
-                    <p class="text-medium">Description: Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-content">
-                <img class="portfolio-content-image" src="project3.jpg" alt="Project 3">
-                <div class="portfolio-text">
-                    <h3 class="text-header">Project 3</h3>
-                    <p class="text-small">Category: Web Design</p>
-                    <p class="text-medium">Description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                </div>
-            </div>
-
-            <!-- Repeat the portfolio content structure for additional projects -->
-
-            <div class="spacer"></div>
+            <a href="#all-works" class="view-all-link">View All Works</a>
         </div>
+
+        <!-- Portfolio Category: Design Works -->
+        <section id="web-design-works" class="main portfolio-category">
+            <h2 class="text-xlarge">Design Works</h2>
+            <p>Brief description of design works. Click on each work for details.</p>
+
+            <!-- Sample Design Work Card (Repeat for other works) -->
+            <div class="portfolio-card">
+                <img class="portfolio-image" src="design-work1.jpg" alt="Design Work 1">
+                <h3 class="text-header">Design Work 1</h3>
+                <p class="text-medium">Year of Completion: 20XX</p>
+                <a href="#design-work-1-details" class="work-details-link">View Details</a>
+            </div>
+            
+            <!-- Repeat the above structure for more design works -->
+
+            <a href="#portfolio-top" class="back-to-top-link">Back to Top</a>
+        </section>
+
+        <!-- Portfolio Category: Development Works -->
+        <section id="development-works" class="main portfolio-category">
+            <h2 class="text-xlarge">Development Works</h2>
+            <p>Brief description of development works. Click on each work for details.</p>
+
+            <!-- Sample Development Work Card (Repeat for other works) -->
+            <div class="portfolio-card">
+                <img class="portfolio-image" src="development-work1.jpg" alt="Development Work 1">
+                <h3 class="text-header">Development Work 1</h3>
+                <p class="text-medium">Year of Completion: 20XX</p>
+                <a href="#development-work-1-details" class="work-details-link">View Details</a>
+            </div>
+            
+            <!-- Repeat the above structure for more development works -->
+
+            <a href="#portfolio-top" class="back-to-top-link">Back to Top</a>
+        </section>
+
+        <!-- Portfolio Category: Other Works -->
+        <section id="other-works" class="main portfolio-category">
+            <h2 class="text-xlarge">Other Works</h2>
+            <p>Brief description of other works. Click on each work for details.</p>
+
+            <!-- Sample Other Work Card (Repeat for other works) -->
+            <div class="portfolio-card">
+                <img class="portfolio-image" src="other-work1.jpg" alt="Other Work 1">
+                <h3 class="text-header">Other Work 1</h3>
+                <p class="text-medium">Year of Completion: 20XX</p>
+                <a href="#other-work-1-details" class="work-details-link">View Details</a>
+            </div>
+            
+            <!-- Repeat the above structure for more other works -->
+
+            <a href="#portfolio-top" class="back-to-top-link">Back to Top</a>
+        </section>
+
+        <!-- Description of Chosen Work (Sample Structure) -->
+        <section id="design-work-1-details" class="main work-details">
+            <h2 class="text-xlarge">Design Work 1</h2>
+            <p class="text-medium">Year of Completion: 20XX</p>
+            <p class="text-medium">Detailed description of the selected work.</p>
+            <a href="#web-design-works" class="back-to-category-link">Back to Design Works</a>
+        </section>
 
         <div class="spacer-large"></div>
         
