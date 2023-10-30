@@ -1,9 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: block;
+  flex: 1; /* Allow it to expand to fill available space */
   flex-direction: column;
   align-items: center;
+  overflow: auto;
 }
 
 .header {
