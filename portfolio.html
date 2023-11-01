@@ -32,95 +32,69 @@
                 </nav>
             </header>
 
-            <div class="header" id="portfolio-top">
-                <h1>My Portfolio</h1>
-            </div>
-
-            <!-- Portfolio Work Options -->
-            <div class="header" id="portfolio-top">
-                <h1>My Portfolio</h1>
-                <p>Explore my work in the following categories:</p>
-                <div class="portfolio-options">
-                    <div class="portfolio-option">
-                        <a href="#web-design-works">Design</a>
+            <main>
+                <section id="portfolio-main" class="main flex-column responsive">
+                    <div class="section-header responsive">
+                        <p class="text-header">My works!</p>
                     </div>
-                    <div class="portfolio-option">
-                        <a href="#development-works">Development</a>
+                    <div class="flex-row">
+                        <p class="text-medium">
+                            These are works that I have done or participated in. 
+                            You can click on them to find out more about each one!
+                        </p>
                     </div>
-                    <div class="portfolio-option">
-                        <a href="#other-works">Others</a>
-                    </div>
-                </div>
-                <a href="#all-works" class="view-all-link">View All Works</a>
-            </div>
-
-            <!-- Portfolio Category: Design Works -->
-            <section id="web-design-works" class="main portfolio-category">
-                <h2 class="text-xlarge">Design Works</h2>
-                <p>Brief description of design works. Click on each work for details.</p>
-
-                <!-- Sample Design Work Card (Repeat for other works) -->
-                <div class="portfolio-card">
-                    <img class="portfolio-image" src="design-work1.jpg" alt="Design Work 1">
-                    <h3 class="text-header">Design Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#design-work-1-details" class="work-details-link">View Details</a>
-                </div>
-                
-                <!-- Repeat the above structure for more design works -->
-
-                <a href="#portfolio-top" class="back-to-top-link">Back to Top</a>
-            </section>
-
-            <!-- Portfolio Category: Development Works -->
-            <section id="development-works" class="main portfolio-category">
-                <h2 class="text-xlarge">Development Works</h2>
-                <p>Brief description of development works. Click on each work for details.</p>
-
-                <!-- Sample Development Work Card (Repeat for other works) -->
-                <div class="portfolio-card">
-                    <img class="portfolio-image" src="development-work1.jpg" alt="Development Work 1">
-                    <h3 class="text-header">Development Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#development-work-1-details" class="work-details-link">View Details</a>
-                </div>
-                
-                <!-- Repeat the above structure for more development works -->
-
-                <a href="#portfolio-top" class="back-to-top-link">Back to Top</a>
-            </section>
-
-            <!-- Portfolio Category: Other Works -->
-            <section id="other-works" class="main portfolio-category">
-                <h2 class="text-xlarge">Other Works</h2>
-                <p>Brief description of other works. Click on each work for details.</p>
-
-                <!-- Sample Other Work Card (Repeat for other works) -->
-                <div class="portfolio-card">
-                    <img class="portfolio-image" src="other-work1.jpg" alt="Other Work 1">
-                    <h3 class="text-header">Other Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#other-work-1-details" class="work-details-link">View Details</a>
-                </div>
-                
-                <!-- Repeat the above structure for more other works -->
-
-                <a href="#portfolio-top" class="back-to-top-link">Back to Top</a>
-            </section>
-
-            <!-- Description of Chosen Work (Sample Structure) -->
-            <section id="design-work-1-details" class="main work-details">
-                <h2 class="text-xlarge">Design Work 1</h2>
-                <p class="text-medium">Year of Completion: 20XX</p>
-                <p class="text-medium">Detailed description of the selected work.</p>
-                <a href="#web-design-works" class="back-to-category-link">Back to Design Works</a>
-            </section>
-
-            <div class="spacer-large"></div>
+                    <div class="spacer-large"></div>
+                    <div class="flex-column">
+                        <div class="flex-row">
+                            <p class="text-medium">Category Filter</p>
+                        </div>
+                        <div class="spacer"></div>
+                        <div class="flex-row">
+                            <a><p class="text-medium portfolio-filter">Development Works</p></a>
+                            <a><p class="text-medium portfolio-filter">Design Works</p></a>
+                        </div>
+                        <div class="flex-row flex-around filter-content">
+                            <div class="portfolio-content cat1-content">
+                                <a class="portfolio-show" id="c1-penumbra">
+                                    <div class="flex-row flex-center">
+                                        <img class="portfolio-content-image" src="images/penumbra/penumbra_logo.png">
+                                    </div>
+                                    <div class="flex-column flex-start portfolio-text">
+                                        <p class="text-medium">Penumbra</p>
+                                        <p class="text-small">Development Works - VR Game</p>
+                                        <p class="text-small">2022</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Repeat the above structure for more items in this category -->
             
-            <div class="triangle-up" href="#portfolio-top">
-                <!-- Scroll-to-top button -->
-            </div>
+                            <div class="portfolio-content cat2-content">
+                                <a class="portfolio-show" id="c2-portfolioapp">
+                                    <div class="flex-row flex-center">
+                                        <img class="portfolio-content-image" src="images/about/pohbear_logo.png">
+                                    </div>
+                                    <div class="flex-column flex-start portfolio-text">
+                                        <p class="text-medium">Portfolio App</p>
+                                        <p class="text-small">Design Works - UI/UX</p>
+                                        <p class="text-small">2021</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Repeat the above structure for more items in this category -->
+                        </div>
+                    </div>
+                </section>
+                <section id="portfolio-info">
+                    <div class="main responsive" id="portfolio-info-details">
+                        <!-- This section will be populated with details when an item is clicked -->
+                    </div>
+                    <div class="main responsive flex-row flex-center">
+                        <a href="#portfolio-main">
+                            <div class="triangle-up"></div>
+                        </a>
+                    </div>
+                </section>
+            </main>            
 
             <!-- Footer Bar -->
             <footer class="custom-footer">
