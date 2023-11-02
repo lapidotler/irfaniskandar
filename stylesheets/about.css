@@ -19,20 +19,31 @@ section {
     margin-bottom: 25px;
 }
 
-h2 {
-    font-family: 'Futura Hv BT', sans-serif;
-    font-weight: 300;
-    font-size: 35px;
-}
-
-
-/* About Section */
 .text-xlarge {
     font-family: 'Futura XBlk BT', sans-serif;
     font-weight: 500;
     font-size: 50px;
 }
 
+h2, .text-large {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.text-xnarrow {
+    font-family: 'Futura BdCn BT', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Nunito Semibold', sans-serif;
+    font-size: 20px;
+}
+
+
+/* About Section */
 .about-section {
     background-color: #DBB5D6;
     padding: 30px;

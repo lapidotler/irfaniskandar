@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.header {
+    text-align: center;
+    padding: 5px;
+    max-width: 1300px;
+}
+
+section {
+    padding: 50px;
+    margin-bottom: 25px;
+}
+
+.text-xlarge {
+    font-family: 'Futura XBlk BT', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+h2, .text-large {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.text-xnarrow {
+    font-family: 'Futura BdCn BT', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Nunito Semibold', sans-serif;
+    font-size: 20px;
+}
+
+
+/* Contact Icons Styles */
+.contact-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.contact-icons a {
+    color: #343a40;
+    margin: 0 30px;
+}

@@ -19,8 +19,6 @@ section {
     margin-bottom: 25px;
 }
 
-
-/* Home Section */
 .text-xlarge {
     font-family: 'Futura XBlk BT', sans-serif;
     font-weight: 500;
@@ -44,6 +42,8 @@ p {
     font-size: 20px;
 }
 
+
+/* Home Section */
 .arrow-link {
     display: inline-block;
     position: relative;

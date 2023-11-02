@@ -19,10 +19,27 @@ section {
   margin-bottom: 25px;
 }
 
-h2 {
+.text-xlarge {
+  font-family: 'Futura XBlk BT', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+h2, .text-large {
   font-family: 'Futura Hv BT', sans-serif;
   font-weight: 300;
   font-size: 35px;
+}
+
+.text-xnarrow {
+  font-family: 'Futura BdCn BT', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Nunito Semibold', sans-serif;
+  font-size: 20px;
 }
 
 
@@ -116,16 +133,12 @@ h2 {
   color: #343a40;
 }
 
-
-/* General Styles */
-.text-xlarge {
-  font-size: 1.5rem;
-}
-
-.text-medium {
-  font-size: 1rem;
-}
-
-.text-header {
-  font-size: 1.25rem;
+.triangle {
+  width: 75px;
+  height: 75px;
+  background: #333;
+  clip-path: polygon(50% 0, 100% 50%, 50% 50%, 0 50%);
+  transition: all 0.5s ease;
+  margin: 0 auto; /* Center the triangle horizontally */
+  display: block; /* Ensure it's a block element to center horizontally */
 }

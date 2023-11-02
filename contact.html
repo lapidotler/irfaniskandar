@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footerTest.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/contact.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/formFormat.css"/>
+    </head>
+    <body>
+        <div class="body-content" style="background-color: #dbb5d6">
+            <!-- Navigation Bar -->
+            <header>
+                <nav class="custom-navbar flex-column responsive">
+                    <div class="custom-navbar-container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo_main.png" alt="Logo" width="auto" height="100px">
+                        </a>
+                        <div class="custom-navbar-links">
+                            <ul>
+                                <li><a class="nav-link" href="index.html">Home</a></li>
+                                <li><a class="nav-link" href="about.html">About Me</a></li>
+                                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="nav-link" href="contact.html">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            
+            <header>
+                <div class="header flex-column flex-center responsive">
+                    <p class="text-xlarge">Contact Me</p>
+                </div>
+            </header>
+
+            <section class="contact-form">
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </form>
+            </section>
+            
+            <section class="contact-section flex-column responsive">
+                <p>If you would like to get in touch with me through social media, feel free to click on any of the icons below!</p>
+                <div class="contact-icons">
+                    <a href="#" class="text-dark mx-3"><i class="fab fa-github fa-6x"></i></a>
+                    <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin fa-6x"></i></a>
+                    <a href="#" class="text-dark mx-3"><i class="fab fa-twitter fa-6x"></i></a>
+                    <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fa-6x"></i></a>
+                </div>
+            </section>
+
+            <!-- Footer Bar -->
+            <footer class="custom-footer">
+                <div class="container flex-column responsive">
+                    <div class="footer-section">
+                        <h2 class="footer-title">Webpages</h2>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h2 class="footer-title">Portfolio</h2>
+                        <ul class="footer-list">
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <div class="footer-icons">
+                            <a href="#" class="text-dark mx-3"><i class="fab fa-github fa-3x"></i></a>
+                            <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a href="#" class="text-dark mx-3"><i class="fab fa-twitter fa-3x"></i></a>
+                            <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fa-3x"></i></a>
+                        </div>
+                        <p class="copyright-text" style="font-weight: bold; margin-top: 10px; font-size: 18px; text-align: right;">Copyright &copy; Irfan Iskandar</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- JavaScript for the pop-up alert -->
+        <script>
+            function submitForm() {
+                // Replace this with your actual form submission logic
+                // For now, we'll just show a pop-up alert
+                alert("Message submitted successfully!");
+            }
+        </script>
+    </body>
+</html>
