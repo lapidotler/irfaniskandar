@@ -17,6 +17,7 @@ body {
 section {
   padding: 50px;
   margin-bottom: 25px;
+  padding-top: 10px;
 }
 
 .text-xlarge {
@@ -78,10 +79,12 @@ p {
   color: #343a40;
 }
 
+
 /* Portfolio Category */
-.portfolio-category {
+.portfolio-category, .work-details {
   background-color: #EDE7F6;
-  padding: 20px;
+  border-radius: 10px;
+  margin: 20px; /* Added margin for spacing */
 }
 
 .portfolio-card {
@@ -91,11 +94,16 @@ p {
   padding: 10px;
   margin: 10px;
   text-align: center;
+  width: 250px; /* Fixed width for cards */
+  display: inline-block; /* Center and align cards horizontally */
+  vertical-align: top; /* Align cards vertically */
 }
 
 .portfolio-image {
   max-width: 100%;
   border-radius: 10px;
+  max-height: 100px;
+  border: 2px solid #ccc; /* Added a small border to the images */
 }
 
 .work-details-link {
@@ -118,12 +126,6 @@ p {
 
 
 /* Description of Chosen Work */
-.work-details {
-  background-color: #EDE7F6;
-  padding: 20px;
-  border-radius: 10px;
-}
-
 .back-to-category-link {
   display: block;
   text-align: center;
