@@ -26,7 +26,7 @@ section {
   font-size: 50px;
 }
 
-h2, .text-large {
+h2, .text-large, .portfolio-option {
   font-family: 'Futura Hv BT', sans-serif;
   font-weight: 300;
   font-size: 35px;
@@ -67,16 +67,21 @@ p {
 }
 
 .portfolio-option {
-  margin: 0 10px;
+  padding: 10px 20px; /* Increased padding */
+  margin: 0 30px;
+  border-radius: 25px;
+  background: #BBB3D9; /* Background color */
+  transition: all 0.5s ease;
+  font-size: 20px;
 }
 
-.view-all-link {
-  display: block;
-  text-align: center;
-  font-size: 1rem;
-  margin: 20px 0;
-  text-decoration: none;
-  color: #343a40;
+.portfolio-option:hover {
+  background: #9B8EC5; /* Hover background color */
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.portfolio-option a:active {
+  color: #EDBDB2; /* Set the color on click */
 }
 
 
@@ -84,14 +89,15 @@ p {
 .portfolio-category, .work-details {
   background-color: #EDE7F6;
   border-radius: 10px;
-  margin: 20px; /* Added margin for spacing */
+  margin: 30px; /* Added margin for spacing */
+  max-width: 1300px;
 }
 
 .portfolio-card {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
   text-align: center;
   width: 250px; /* Fixed width for cards */
@@ -102,8 +108,10 @@ p {
 .portfolio-image {
   max-width: 100%;
   border-radius: 10px;
-  max-height: 100px;
+  max-height: 200px;
   border: 2px solid #ccc; /* Added a small border to the images */
+  height: 150px;
+  width: 200px;
 }
 
 .work-details-link {

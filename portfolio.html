@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/navbar.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footer.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/portfolio.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/lightbox.css"/>
     </head>
     <body>
         <div class="body-content" style="background-color: #dbb5d6">
@@ -52,47 +53,63 @@
             </div>
 
             <!-- Portfolio Category: Design Works -->
-            <section id="web-design-works" class="main portfolio-category">
+            <section id="web-design-works" class="main portfolio-category flex-center">
                 <h2 class="text-xlarge">Design Works</h2>
                 <p>Brief description of design works. Click on each work for details.</p>
 
                 <!-- Sample Design Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Ai/logo-ai1.JPG" alt="Design Work 1">
-                    <h3 class="text-header">Design Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#design-work-1-details" class="work-details-link">View Details</a>
+                    <h3 class="text-header">Maldives Special</h3>
+                    <p class="text-medium">Year of Completion: 2021</p>
+                    <a href="javascript:void(0)" class="work-details-link" onclick="openLightbox('design', 1)">View Details</a>
                 </div>
 
-                <!-- Sample Design Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Ps/logo-ps1.jpg" alt="Design Work 1">
-                    <h3 class="text-header">Design Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#design-work-2-details" class="work-details-link">View Details</a>
+                    <h3 class="text-header">Guarana Antarctica</h3>
+                    <p class="text-medium">Year of Completion: 2022</p>
+                    <a href="#" class="work-details-link" onclick="openLightbox('Design Work 1')">View Details</a>
                 </div>
 
-                <!-- Sample Design Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Xd/1/logo-xd1.png" alt="Design Work 1">
-                    <h3 class="text-header">Design Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#design-work-3-details" class="work-details-link">View Details</a>
+                    <h3 class="text-header">The Right Bakery</h3>
+                    <p class="text-medium">Year of Completion: 2022</p>
+                    <a href="#" class="work-details-link" onclick="openLightbox('Design Work 1')">View Details</a>
                 </div>
 
-                <!-- Sample Design Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Xd/2/logo-xd2.png" alt="Design Work 1">
-                    <h3 class="text-header">Design Work 1</h3>
-                    <p class="text-medium">Year of Completion: 20XX</p>
-                    <a href="#design-work-4-details" class="work-details-link">View Details</a>
+                    <h3 class="text-header">InnovaXcel</h3>
+                    <p class="text-medium">Year of Completion: 2023</p>
+                    <a href="#" class="work-details-link" onclick="openLightbox('Design Work 1')">View Details</a>
                 </div>
-                
-                <!-- Repeat the above structure for more design works -->
             </section>
 
+            <!-- Lightbox: Design Works -->
+            <div id="design-1-lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="close" onclick="closeLightbox('design', 1)">&times;</span>
+                    <div class="text-gallery" id="lightbox-text">
+                        <h2 class="lightbox-text-xlarge" id="lightbox-title">Maldives Special</h2>
+                        <p class="lightbox-text-large" id="lightbox-year">Year of Completion: 2021</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">This work features a detailed 2-page magazine content surrounding the Maldives and its exquisite landscape.</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">This work primarily focuses on the use of the grid system in a 2-page content.</p>
+                    </div>
+                    <div class="image-gallery" id="lightbox-images">
+                        <p class="lightbox-text-pic">Sketches</p>
+                        <img src="images/design/portfolio/Ai/Sketch2.jpg" alt="Sketches" class="lightbox-image">
+                        <p class="lightbox-text-pic">Grid System</p>
+                        <img src="images/design/portfolio/Ai/Grid System.jpg" alt="Grid System" class="lightbox-image">
+                        <p class="lightbox-text-pic">Final Product</p>
+                        <img src="images/design/portfolio/Ai/L10 - Final Artwork.png" alt="Final Product" class="lightbox-image">
+                    </div>
+                </div>
+            </div>
+
             <!-- Portfolio Category: Development Works -->
-            <section id="development-works" class="main portfolio-category">
+            <section id="development-works" class="main portfolio-category flex-center">
                 <h2 class="text-xlarge">Development Works</h2>
                 <p>Brief description of development works. Click on each work for details.</p>
 
@@ -104,7 +121,6 @@
                     <a href="#development-work-1-details" class="work-details-link">View Details</a>
                 </div>
 
-                <!-- Sample Development Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/development/portfolio/mobile/2/1.1.png" alt="Development Work 1">
                     <h3 class="text-header">Development Work 1</h3>
@@ -112,7 +128,6 @@
                     <a href="#development-work-2-details" class="work-details-link">View Details</a>
                 </div>
 
-                <!-- Sample Development Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/development/portfolio/web/1/logo-dev1.jpg" alt="Development Work 1">
                     <h3 class="text-header">Development Work 1</h3>
@@ -120,19 +135,16 @@
                     <a href="#development-work-3-details" class="work-details-link">View Details</a>
                 </div>
 
-                <!-- Sample Development Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/development/portfolio/web/2/logo-dev1.png" alt="Development Work 1">
                     <h3 class="text-header">Development Work 1</h3>
                     <p class="text-medium">Year of Completion: 20XX</p>
                     <a href="#development-work-4-details" class="work-details-link">View Details</a>
                 </div>
-                
-                <!-- Repeat the above structure for more development works -->
             </section>
 
             <!-- Portfolio Category: Other Works -->
-            <section id="other-works" class="main portfolio-category">
+            <section id="other-works" class="main portfolio-category flex-center">
                 <h2 class="text-xlarge">Other Works</h2>
                 <p>Brief description of other works. Click on each work for details.</p>
 
@@ -148,7 +160,7 @@
             </section>
 
             <!-- Description of Chosen Work (Sample Structure) -->
-            <section id="design-work-1-details" class="main work-details">
+            <section id="design-work-1-details" class="main work-details flex-center">
                 <h2 class="text-xlarge">Design Work 1</h2>
                 <p class="text-medium">Year of Completion: 20XX</p>
                 <p class="text-medium">Detailed description of the selected work.</p>
@@ -191,7 +203,8 @@
                     </div>
                 </div>
             </footer>
+            
+            <script src="scripts/lightbox.js"></script>
         </div>
-        <script src="portfolio.js"></script>
     </body>
 </html>

@@ -1,0 +1,77 @@
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Style for the images in the lightbox */
+.lightbox-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
+
+.text-gallery {
+    margin-bottom: 30px 0;
+}
+
+
+.lightbox-text-xlarge {
+    font-family: 'Futura XBlk BT', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+  
+.lightbox-text-large{
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+  
+.lightbox-text-medium {
+    font-family: 'Futura BdCn BT', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lightbox-text-pic {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.lightbox-text-xlarge, .lightbox-text-large, .lightbox-text-medium {
+    margin: 10px 0;
+}
