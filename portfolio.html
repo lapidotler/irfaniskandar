@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footer.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/portfolio.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/format/lightbox.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/carousel.css"/>
     </head>
     <body>
         <div class="body-content" style="background-color: #dbb5d6">
@@ -41,8 +42,8 @@
 
             <!-- Portfolio Work Options (Cards) -->
             <div class="portfolio-options">
-                <div class="portfolio-option" id="web-design-option">
-                    <a href="#web-design-works">Design</a>
+                <div class="portfolio-option" id="design-option">
+                    <a href="#design-works">Design</a>
                 </div>
                 <div class="portfolio-option" id="development-option">
                     <a href="#development-works">Development</a>
@@ -53,15 +54,16 @@
             </div>
 
             <!-- Portfolio Category: Design Works -->
-            <section id="web-design-works" class="main portfolio-category flex-center">
+            <section id="design-works" class="main portfolio-category flex-center">
                 <h2 class="text-xlarge">Design Works</h2>
-                <p>Brief description of design works. Click on each work for details.</p>
+                <p>I specialize in creating visually stunning designs using industry-standard tools like Adobe Illustrator, Photoshop, and XD. Whether it's crafting captivating logos, sleek user interfaces, or striking marketing materials, my design work ensures a powerful visual impact.</p>
+                <p>My design skills extend to web and mobile app interfaces, print materials, and digital graphics, making me a versatile designer capable of bringing your creative visions to life.</p>
 
                 <!-- Sample Design Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Ai/logo-ai1.JPG" alt="Design Work 1">
                     <h3 class="text-header">Maldives Special</h3>
-                    <p class="text-medium">Year of Completion: 2021</p>
+                    <p class="text-medium">Year of Completion: 2023</p>
                     <a href="javascript:void(0)" class="work-details-link" onclick="openLightbox('design', 1)">View Details</a>
                 </div>
 
@@ -69,21 +71,21 @@
                     <img class="portfolio-image" src="images/design/portfolio/Ps/logo-ps1.jpg" alt="Design Work 1">
                     <h3 class="text-header">Guarana Antarctica</h3>
                     <p class="text-medium">Year of Completion: 2022</p>
-                    <a href="#" class="work-details-link" onclick="openLightbox('Design Work 1')">View Details</a>
+                    <a href="javascript:void(0)" class="work-details-link" onclick="openLightbox('design', 2)">View Details</a>
                 </div>
 
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Xd/1/logo-xd1.png" alt="Design Work 1">
                     <h3 class="text-header">The Right Bakery</h3>
-                    <p class="text-medium">Year of Completion: 2022</p>
-                    <a href="#" class="work-details-link" onclick="openLightbox('Design Work 1')">View Details</a>
+                    <p class="text-medium">Year of Completion: 2023</p>
+                    <a href="javascript:void(0)" class="work-details-link" onclick="openLightbox('design', 3)">View Details</a>
                 </div>
 
                 <div class="portfolio-card">
                     <img class="portfolio-image" src="images/design/portfolio/Xd/2/logo-xd2.png" alt="Design Work 1">
                     <h3 class="text-header">InnovaXcel</h3>
                     <p class="text-medium">Year of Completion: 2023</p>
-                    <a href="#" class="work-details-link" onclick="openLightbox('Design Work 1')">View Details</a>
+                    <a href="javascript:void(0)" class="work-details-link" onclick="openLightbox('design', 4)">View Details</a>
                 </div>
             </section>
 
@@ -93,7 +95,8 @@
                     <span class="close" onclick="closeLightbox('design', 1)">&times;</span>
                     <div class="text-gallery" id="lightbox-text">
                         <h2 class="lightbox-text-xlarge" id="lightbox-title">Maldives Special</h2>
-                        <p class="lightbox-text-large" id="lightbox-year">Year of Completion: 2021</p>
+                        <p class="lightbox-text-large" id="lightbox-date">Date of Completion: 17/01/2023</p>
+                        <p class="lightbox-text-large" id="lightbox-software">Software(s) Used: Adobe Illustrator</p>
                         <p class="lightbox-text-medium" id="lightbox-description">This work features a detailed 2-page magazine content surrounding the Maldives and its exquisite landscape.</p>
                         <p class="lightbox-text-medium" id="lightbox-description">This work primarily focuses on the use of the grid system in a 2-page content.</p>
                     </div>
@@ -108,10 +111,142 @@
                 </div>
             </div>
 
+            <div id="design-2-lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="close" onclick="closeLightbox('design', 2)">&times;</span>
+                    <div class="text-gallery" id="lightbox-text">
+                        <h2 class="lightbox-text-xlarge" id="lightbox-title">Guarana Antarctica</h2>
+                        <p class="lightbox-text-large" id="lightbox-date">Date of Completion: 15/10/2022</p>
+                        <p class="lightbox-text-large" id="lightbox-software">Software(s) Used: Adobe Photoshop</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">This work features a product advertisement of a popular can drink within South America (SA).</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">Originated from Brazil, the product spans popularity within SA, and even external places like Japan.</p>
+                    </div>
+                    <div class="image-gallery" id="lightbox-images">
+                        <p class="lightbox-text-pic">Sketches</p>
+                        <img src="images/design/portfolio/Ps/CS 2.jpg" alt="Sketches" class="lightbox-image">
+                        <p class="lightbox-text-pic">Mindmap</p>
+                        <img src="images/design/portfolio/Ps/Mind Map.jpg" alt="Grid System" class="lightbox-image">
+                        <p class="lightbox-text-pic">Final Product</p>
+                        <img src="images/design/portfolio/Ps/L5 - Guaraná_Antarctica.jpg" alt="Final Product" class="lightbox-image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="design-3-lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="close" onclick="closeLightbox('design', 3)">&times;</span>
+                    <div class="text-gallery" id="lightbox-text">
+                        <h2 class="lightbox-text-xlarge" id="lightbox-title">The Right Bakery</h2>
+                        <p class="lightbox-text-large" id="lightbox-date">Date of Completion: 06/06/2023</p>
+                        <p class="lightbox-text-large" id="lightbox-software">Software(s) Used: Adobe Illustrator, Adobe XD</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">This work portrays a brand new business venture, in this case, an online pastry app.</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">The Right Bakery follows the philosophy of delivering outstanding pastries at a fast and convenient pace.</p>
+                    </div>
+                    <div class="image-carousel" id="lightbox-images-3">
+                        <div class="carousel">
+                            <div class="carousel-controls">
+                                <span class="prev-slide" onclick="plusSlide(-1)">&#10094;</span>
+                                <span class="next-slide" onclick="plusSlide(1)">&#10095;</span>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Homepage</p>
+                                <img src="images/design/portfolio/Xd/1/Home Page.png" alt="Sketches">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">About Us Page</p>
+                                <img src="images/design/portfolio/Xd/1/About Us Page.png" alt="Mindmap">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Categories Page (Pt. 1)</p>
+                                <img src="images/design/portfolio/Xd/1/Categories Page 1.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Categories Page (Pt. 2)</p>
+                                <img src="images/design/portfolio/Xd/1/Categories Page 2.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Purchase Page</p>
+                                <img src="images/design/portfolio/Xd/1/Purchase Page.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Confirmation Page</p>
+                                <img src="images/design/portfolio/Xd/1/Confirmation Page.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Register Page</p>
+                                <img src="images/design/portfolio/Xd/1/Register Page.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Login Page</p>
+                                <img src="images/design/portfolio/Xd/1/Login Page - 1.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Profile Page</p>
+                                <img src="images/design/portfolio/Xd/1/Profile Page.png" alt="Final Product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="design-4-lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="close" onclick="closeLightbox('design', 4)">&times;</span>
+                    <div class="text-gallery" id="lightbox-text">
+                        <h2 class="lightbox-text-xlarge" id="lightbox-title">InnovaXcel</h2>
+                        <p class="lightbox-text-large" id="lightbox-date">Date of Completion: 04/08/2023</p>
+                        <p class="lightbox-text-large" id="lightbox-software">Software(s) Used: Adobe Illustrator, Adobe XD</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">This work gives insight of my potential portfolio app through the mobile landscape.</p>
+                        <p class="lightbox-text-medium" id="lightbox-description">The mobile InnovaXcel app captures the interest of the audience through my portfolio gallery and the app's stunning animations.</p>
+                    </div>
+                    <div class="image-carousel" id="lightbox-images-4">
+                        <div class="carousel">
+                            <div class="carousel-controls">
+                                <span class="prev-slide" onclick="plusSlide(-1)">&#10094;</span>
+                                <span class="next-slide" onclick="plusSlide(1)">&#10095;</span>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Homepage</p>
+                                <img src="images/design/portfolio/Xd/2/Main Homepage.png" alt="Sketches">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">About Me Page</p>
+                                <img src="images/design/portfolio/Xd/2/About Me.png" alt="Mindmap">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Portfolio Page (Design)</p>
+                                <img src="images/design/portfolio/Xd/2/Portfolio.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Portfolio Page (Development)</p>
+                                <img src="images/design/portfolio/Xd/2/Portfolio 1.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Portfolio Page (ALL)</p>
+                                <img src="images/design/portfolio/Xd/2/Portfolio - Xtra.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Design Page</p>
+                                <img src="images/design/portfolio/Xd/2/More - Design.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Development Page</p>
+                                <img src="images/design/portfolio/Xd/2/More - Development.png" alt="Final Product">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="carousel-item-text">Contact Me Page</p>
+                                <img src="images/design/portfolio/Xd/2/Contacts (Anima).png" alt="Final Product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Portfolio Category: Development Works -->
             <section id="development-works" class="main portfolio-category flex-center">
                 <h2 class="text-xlarge">Development Works</h2>
-                <p>Brief description of development works. Click on each work for details.</p>
+                <p>In the realm of development, I excel in building dynamic and responsive websites with HTML and CSS, ensuring an engaging user experience. Additionally, I'm proficient in PHP for crafting interactive web applications.</p>
+                <p>I also have a strong foundation in mobile app development using Android Studio and database management with SQLite. From front-end to back-end, I'm equipped to turn your development projects into functional and user-friendly solutions.</p>
 
                 <!-- Sample Development Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
@@ -146,7 +281,8 @@
             <!-- Portfolio Category: Other Works -->
             <section id="other-works" class="main portfolio-category flex-center">
                 <h2 class="text-xlarge">Other Works</h2>
-                <p>Brief description of other works. Click on each work for details.</p>
+                <p>Beyond design and development, I take on personal projects that allow me to showcase my creative problem-solving abilities. These projects span a wide range of interests, from personal blogs to DIY gadgets, demonstrating my diverse skills and interests.</p>
+                <p>Moreover, I've dabbled in the realm of Robotic Process Automation (RPA), automating repetitive tasks to boost efficiency and productivity. My automation projects reflect my commitment to innovation and streamlining processes.</p>
 
                 <!-- Sample Other Work Cards (Repeat for other works) -->
                 <div class="portfolio-card">
@@ -157,13 +293,6 @@
                 </div>
                 
                 <!-- Repeat the above structure for more other works -->
-            </section>
-
-            <!-- Description of Chosen Work (Sample Structure) -->
-            <section id="design-work-1-details" class="main work-details flex-center">
-                <h2 class="text-xlarge">Design Work 1</h2>
-                <p class="text-medium">Year of Completion: 20XX</p>
-                <p class="text-medium">Detailed description of the selected work.</p>
             </section>
 
             <div class="spacer-large"></div>
@@ -205,6 +334,7 @@
             </footer>
             
             <script src="scripts/lightbox.js"></script>
+            <script src="scripts/carousel.js"></script>
         </div>
     </body>
 </html>
