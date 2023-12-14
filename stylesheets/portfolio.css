@@ -1,49 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: block;
-  flex: 1; /* Allow it to expand to fill available space */
-  flex-direction: column;
-  align-items: center;
-  overflow: auto;
-}
-
-.header {
-  text-align: center;
-  padding: 5px;
-  max-width: 1300px;
-}
-
-section {
-  padding: 50px;
-  margin-bottom: 25px;
-  padding-top: 10px; 
-}
-
-.text-xlarge {
-  font-family: 'Futura XBlk BT', sans-serif;
-  font-weight: 500;
-  font-size: 50px;
-}
-
-h2, .text-large, .portfolio-option {
-  font-family: 'Futura Hv BT', sans-serif;
-  font-weight: 300;
-  font-size: 35px;
-}
-
-.text-xnarrow {
-  font-family: 'Futura BdCn BT', sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-}
-
-p {
-  font-family: 'Nunito Semibold', sans-serif;
-  font-size: 20px;
-}
-
-
 /* Portfolio Work Options */
 #portfolio-top {
   background-color: #DBB5D6;
@@ -100,7 +54,7 @@ p {
   padding: 15px;
   margin: 10px;
   text-align: center;
-  width: 250px; /* Fixed width for cards */
+  width: 350px; /* Fixed width for cards */
   display: inline-block; /* Center and align cards horizontally */
   vertical-align: top; /* Align cards vertically */
 }
@@ -130,6 +84,14 @@ p {
   margin: 20px 0;
   text-decoration: none;
   color: #343a40;
+}
+
+.portfolio-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  text-align: center;
+  color: black;
 }
 
 

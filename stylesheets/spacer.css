@@ -1,0 +1,9 @@
+/* Define styles for spacer class */
+.spacer {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Define styles for spacer-large class */
+.spacer-large {
+    margin-bottom: 40px; /* Adjust the margin as needed */
+}
