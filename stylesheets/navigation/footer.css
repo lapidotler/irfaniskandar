@@ -2,6 +2,7 @@
     background-color: #edbdb2; /* Background color */
     color: #343a40; /* Text color */
     font-size: 16px; /* Font size */
+    display: block;
 }
 
 .container {
@@ -11,10 +12,11 @@
     flex-wrap: wrap;
     max-width: 1300px; /* Set the maximum width */
     margin: 0 auto;
+    padding: 20px;
 }
 
 .footer-section {
-    margin-bottom: 30px; /* Add space between sections */
+    margin-bottom: 20px; /* Add space between sections */
 }
 
 .footer-title {
@@ -55,4 +57,23 @@
 .footer-icons a {
     color: #343a40; /* Set the color to #343a40 (dark gray) */
     margin: 0 15px; /* Add some space around each icon */
+}
+
+.copyright-text {
+    font-weight: bold; 
+    margin-top: 10px; 
+    font-size: 18px; 
+    text-align: center;
+}
+
+@media (max-width: 770px) {
+    .custom-footer {
+        /* Remove the responsive class at 770px and larger */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 35px; /* Add space between sections */
+    }
 }

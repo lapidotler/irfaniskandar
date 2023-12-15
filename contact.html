@@ -7,44 +7,52 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/spacer.css"/>
+
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footerTest.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/navbar.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footer.css"/>
 
-        <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
         <link rel="stylesheet" type="text/css" href="stylesheets/contact.css"/>
-        
         <link rel="stylesheet" type="text/css" href="stylesheets/format/formFormat.css"/>
     </head>
     <body>
         <div class="body-content" style="background-color: #dbb5d6">
             <!-- Navigation Bar -->
-            <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo_main.png" alt="Logo" width="auto" height="100px">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_main.png" alt="Logo" width="auto" height="100px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             
             <header>
                 <div class="header flex-column flex-center responsive">
@@ -67,20 +75,23 @@
                     <button type="button" onclick="submitForm()">Submit</button>
                 </form>
             </section>
-            
+       
+            <div class="spacer-large"></div>
+
             <section class="contact-section flex-column responsive">
+                <h2>Social Media</h2>
                 <p>If you would like to get in touch with me through social media, feel free to click on any of the icons below!</p>
                 <div class="contact-icons">
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-github fa-6x"></i></a>
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin fa-6x"></i></a>
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-twitter fa-6x"></i></a>
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fa-6x"></i></a>
+                    <a href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-5x"></i></a>
+                    <a href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-5x"></i></a>
+                    <a href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-5x"></i></a>
+                    <a href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-5x"></i></a>
                 </div>
             </section>
 
             <!-- Footer Bar -->
             <footer class="custom-footer">
-                <div class="container flex-column responsive">
+                <div class="container">
                     <div class="footer-section">
                         <h2 class="footer-title">Webpages</h2>
                         <ul class="footer-list">
@@ -92,26 +103,22 @@
                     <div class="footer-section">
                         <h2 class="footer-title">Portfolio</h2>
                         <ul class="footer-list">
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Others</a></li>
+                            <li><a href="portfolio.html#design-works">Design</a></li>
+                            <li><a href="portfolio.html#development-works">Development</a></li>
+                            <li><a href="portfolio.html#other-works">Others</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
                         <div class="footer-icons">
-                            <a href="#" class="text-dark mx-3"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
-                            <a href="#" class="text-dark mx-3"><i class="fab fa-twitter fa-3x"></i></a>
-                            <a href="#" class="text-dark mx-3"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-3x"></i></a>
+                            <a href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-3x"></i></a>
+                            <a href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-3x"></i></a>
                         </div>
-                        <p class="copyright-text" style="font-weight: bold; margin-top: 10px; font-size: 18px; text-align: right;">Copyright &copy; Irfan Iskandar</p>
+                        <p class="copyright-text">Copyright &copy; Irfan Iskandar</p>
                     </div>
                 </div>
             </footer>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/jquery.min.js"></script>
     </body>
 </html>

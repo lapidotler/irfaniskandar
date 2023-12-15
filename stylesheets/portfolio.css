@@ -5,16 +5,6 @@
   text-align: center;
 }
 
-#portfolio-top h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-#portfolio-top p {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
 .portfolio-options {
   display: flex;
   justify-content: center;
@@ -32,6 +22,10 @@
 .portfolio-option:hover {
   background: #9B8EC5; /* Hover background color */
   transform: scale(1.1); /* Increase size on hover */
+}
+
+.portfolio-option a {
+  color: #6C1DE6
 }
 
 .portfolio-option a:active {
