@@ -13,10 +13,17 @@ a {
 .navbar {
     background-color: #bbb3d6!important; /* Set your desired background color */
     padding: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .navbar-brand img {
     max-height: 70px;
+    transition: transform 0.3s; /* Add transition for the logo scaling */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05); /* Scale up on hover */
 }
 
 .navbar-nav {
@@ -35,6 +42,8 @@ a {
     font-family: "Futura Hv BT";
 }
 
-.nav-link:hover {
-    color: #7869B3; /* Change the color on hover */
+
+/* Increase specificity to override Bootstrap styles */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #9f63c1; /* Change the color on hover */
 }

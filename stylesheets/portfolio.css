@@ -45,12 +45,14 @@
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
   margin: 10px;
   text-align: center;
-  width: 350px; /* Fixed width for cards */
-  display: inline-block; /* Center and align cards horizontally */
-  vertical-align: top; /* Align cards vertically */
+  width: 350px;
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  justify-content: space-between; /* Distribute space between child elements */
 }
 
 .portfolio-image {
@@ -82,10 +84,15 @@
 
 .portfolio-text {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin: 0;
   text-align: center;
   color: black;
+}
+
+#portfolio-main, #portfolio-info {
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 
@@ -107,4 +114,10 @@
   transition: all 0.5s ease;
   margin: 0 auto; /* Center the triangle horizontally */
   display: block; /* Ensure it's a block element to center horizontally */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
 }
