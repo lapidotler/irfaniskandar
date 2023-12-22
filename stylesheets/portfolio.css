@@ -22,6 +22,7 @@
 .portfolio-option:hover {
   background: #9B8EC5; /* Hover background color */
   transform: scale(1.1); /* Increase size on hover */
+  cursor: pointer;
 }
 
 .portfolio-option a {
@@ -30,6 +31,12 @@
 
 .portfolio-option a:active {
   color: #EDBDB2; /* Set the color on click */
+}
+
+.selected {
+  background: #9B8EC5; /* Background color */
+  color: #6C1DE6;
+  transform: scale(1.1); /* Increase size on hover */
 }
 
 
@@ -120,4 +127,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* Adjust as needed */
+}
+
+
+/* Hover Effect */
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Grey overlay color with transparency */
+  color: #fff; /* Text color for the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-hover {
+  opacity: 1; /* Visible on hover */
+}
+
+.portfolio-hover a {
+  text-decoration: none;
+  color: #fff; /* Link color for the overlay */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff; /* Button background color */
+  color: #333!important; /* Button text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-hover a:hover .button {
+  background-color: #333; /* Button background color on hover */
+  color: #fff; /* Button text color on hover */
 }

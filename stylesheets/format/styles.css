@@ -91,7 +91,7 @@ p {
     margin-bottom: 5px;
 }
 
-.text-small {
+.text-small, .text-med {
     font-weight: normal;
     margin-bottom: 0;
 }

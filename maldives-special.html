@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Homepage</title>
+        <title>Maldives Special</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -18,7 +18,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="stylesheets/index.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/portfolio-content.css"/>
     </head>
     <body>
         <div class="body-content" style="background-color: #dbb5d6">
@@ -53,87 +53,69 @@
                 </div>
             </nav>
 
-            <div class="container-fluid">
-                <!-- Intro Section -->
-                <div class="header flex-column flex-center responsive">
-                    <p class="text-xlarge">Welcome to the Portfolio</p>
-                    <p class="text-large">First of all, my name is...</p>
-
-                    <img src="images/logo2.png" width="auto" height="250px" alt="Your Image">
-
-                    <p class="text-xnarrow">Interested in what I have to offer? Know more about me by clicking the arrow below!</p>
-                    <a href="#home-about" class="arrow-link">
-                        <div class="triangle"></div>
-                    </a>
+            <!-- Portfolio Works Section -->
+            <section id="maldives-special" class="main flex-column responsive">
+                <!-- Section Header -->
+                <div class="section-header responsive">
+                    <h2 class="text-xlarge">Maldives Special</h2>
                 </div>
 
-                <!-- About Me Section -->
-                <section class="about-section flex-column responsive" id="home-about">
-                    <h2>Who are you?</h2>
-                  
-                    <div class="about-container">
-                        <div class="about-content">
-                            <p class="text-med">Hello there! My name is Irfan Iskandar. I am currently a student who is studying in their second year at Republic Polytechnic. Right now, I am pursuing a diploma in Digital Design and Development.</p>
-                            <p class="text-med">Passionate about learning, I strive for happiness and excellence through hard work and effort, demonstrating my ability and willingness to prove my abilities.</p>
-                            <p class="text-med">This is my personal portfolio where you could learn more about who I am and what I can do.</p>
-                            <p class="text-med">Wish to know more? Click the button below!</p>
-                            <button class="button button5" href="about.html">Learn More >></button>
-                        </div>
-                
-                        <div class="about-image-container">
-                            <div class="additional-shape"></div>
-                            <div class="image-border">
-                                <img src="images/profile/imgprofile.png" alt="About Me Image">
+                <!-- Intro to Content -->
+                <div class="d-flex justify-content-around">
+                    <div class="intro-content">
+                        <h2 class="text-header">Title: Maldives Special</h2>
+                        <p class="text-small">2-Page Magazine Content</p>
+                        <p class="text-med">Software: Adobe Illustrator</p>
+                        <p class="text-med">Date of Completion: 17/01/2023</p>
+                        <!-- Add links/buttons if needed -->
+                    </div>
+                    <div class="icon-content">
+                        <!-- Portfolio Image/Logo -->
+                        <img src="images/design/portfolio/Ai/logo-ai1.JPG" alt="Maldives Special Icon">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="normal-content">
+                    <h2 class="text-header">Introduction to the Work</h2>
+                    <p class="text-medium">Explain the work in detail...</p>
+                    <!-- Add more detailed content here -->
+
+                    <!-- Use Bootstrap Carousel for images -->
+                    <div id="carouselMaldivesSpecial" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- Modify this part to loop through images -->
+                            <div class="carousel-item active">
+                                <img src="images/design/portfolio/Ai/Sketch2.jpg" class="d-block w-100" alt="Sketches">
                             </div>
+                            <div class="carousel-item">
+                                <img src="images/design/portfolio/Ai/Grid System.jpg" class="d-block w-100" alt="Grid System">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/design/portfolio/Ai/L10 - Final Artwork.png" class="d-block w-100" alt="Final Product">
+                            </div>
+                            <!-- Add more images as needed -->
+
                         </div>
+
+                        <!-- Add Carousel Navigation Controls -->
+                        <a class="carousel-control-prev" href="#carouselMaldivesSpecial" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselMaldivesSpecial" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                </section>
-
-                <!-- Portfolio Section -->
-                <section class="portfolio-section flex-column responsive">
-                    <h2>Portfolio</h2>
-                    <p>Check out some of my work below.</p>
-
-                    <div class="portfolio-display">
-                        <div class="portfolio-item">
-                            <img src="portfolio-image1.jpg" alt="Portfolio Image 1">
-                            <h3>Project Title 1</h3>
-                            <p>Graphic Design</p>
-                            <p>2022</p>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <img src="portfolio-image2.jpg" alt="Portfolio Image 2">
-                            <h3>Project Title 2</h3>
-                            <p>UI/UX Design</p>
-                            <p>2023</p>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <img src="portfolio-image3.jpg" alt="Portfolio Image 3">
-                            <h3>Project Title 3</h3>
-                            <p>Web Development</p>
-                            <p>2021</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact Me Section -->
-                <section class="contact-section flex-column responsive">
-                    <h2>Contact Me</h2>
-                    <p>If you would like to get in touch with me, feel free to click on any social media icons below!</p>
-                    <p>For any other work-related matters, please do <a style="color: #343a40; text-decoration-line: underline;" href="contact.html">email me instead!</a></p>
-                    <div class="contact-icons">
-                        <a href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-5x"></i></a>
-                        <a href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-5x"></i></a>
-                        <a href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-5x"></i></a>
-                        <a href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-5x"></i></a>
-                    </div>
-                </section>
-
-            </div>
-
-            <br/><br/>
+                    
+                    <p class="text-medium">Final Thoughts...</p>
+                    <!-- Add a video if needed -->
+                    <!-- Add a button to go back to the portfolio -->
+                    <a href="portfolio.html" class="btn btn-primary">Back to Portfolio</a>
+                </div>
+            </section>
 
             <!-- Footer Bar -->
             <footer class="custom-footer">
@@ -167,6 +149,7 @@
             </footer>
         </div>
 
+        <script src="scripts/portfolio-filter.js"></script>
         <script src="scripts/footer.js"></script>
     </body>
 </html>

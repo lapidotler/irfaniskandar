@@ -7,15 +7,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/spacer.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/spacer.css"/>
 
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footerTest.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/navbar.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footer.css"/>
-
-        <link rel="stylesheet" type="text/css" href="stylesheets/format/lightbox.css"/>
-        <link rel="stylesheet" type="text/css" href="stylesheets/format/carousel.css"/>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -79,206 +76,218 @@
                         </p>
                     </div>
                     
-                    <div class="spacer-large"></div>
+                    <div class="spacer"></div>
 
-                    <div class="flex-column">
-                        <div class="spacer"></div>
-                        
+                    <div class="flex-column">                 
+                        <div id="cards-display"></div><br/>
+
                         <!-- Portfolio Work Options (Cards) -->
                         <div class="portfolio-options flex-row">
                             <div class="portfolio-option" id="design-option">
-                                <a href="#design-works">Design</a>
+                                <a href="#cards-display">Design</a>
                             </div>
                             <div class="portfolio-option" id="development-option">
-                                <a href="#development-works">Development</a>
+                                <a href="#cards-display">Development</a>
                             </div>
                             <div class="portfolio-option" id="other-works-option">
-                                <a href="#other-works">Others</a>
+                                <a href="#cards-display">Others</a>
                             </div>
                         </div>
 
                         <div class="spacer"></div>
-                        <div id="design-works"></div><br/>
 
-                        <!-- Portfolio Category: Design Works -->
-                        <section class="main portfolio-category flex-center">
-                            <div class="section-header responsive">
-                                <h2 class="text-xlarge">Design Works</h2>
-                            </div>
-
-                            <div class="flex-row">
-                                <p class="text-medium">I specialize in creating visually stunning designs using industry-standard tools like Adobe Illustrator, Photoshop, and XD. Whether it's crafting captivating logos, sleek user interfaces, or striking marketing materials, my design work ensures a powerful visual impact.</p>
-                                <p class="text-medium">My design skills extend to web and mobile app interfaces, print materials, and digital graphics, making me a versatile designer capable of bringing your creative visions to life.</p>
-                            </div>
-
-                            <!-- Sample Design Work Cards (Repeat for other works) -->
-                            <div class="cards flex-row flex-around filter-content">
-                                <div class="portfolio-card cat1-design">
-                                    <a class="portfolio-show" id="c1-maldives-special">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/design/portfolio/Ai/logo-ai1.JPG" alt="Design Work 1">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">Maldives Special</h3>
-                                            <p class="text-medium">Design Works: Adobe Illustrator</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
+                        <div class="filter-content">
+                            <!-- Portfolio Category: Design Works -->
+                            <section class="main portfolio-category flex-center design-works">
+                                <div class="section-header responsive">
+                                    <h2 class="text-xlarge">Design Works</h2>
                                 </div>
 
-                                <div class="portfolio-card cat1-design">
-                                    <a class="portfolio-show" id="c1-guarana-antartica">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/design/portfolio/Ps/logo-ps1.jpg" alt="Design Work 1">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">Guarana Antarctica</h3>
-                                            <p class="text-medium">Design Works: Adobe Photoshop</p>
-                                            <p class="text-small">Year of Completion: 2022</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                                <div class="portfolio-card cat1-design">
-                                    <a class="portfolio-show" id="c1-the-right-bakery">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/design/portfolio/Xd/1/logo-xd1.png" alt="Design Work 2">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">The Right Bakery</h3>
-                                            <p class="text-medium">Design Works: Adobe XD</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                                <div class="portfolio-card cat1-design">
-                                    <a class="portfolio-show" id="c1-innovaxcel">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/design/portfolio/Xd/2/logo-xd2.png" alt="Design Work 3">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">InnovaXcel</h3>
-                                            <p class="text-medium">Design Works: Adobe XD</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
-
-                        <div class="spacer"></div>
-                        <div id="development-works"></div><br/>
-
-                        <!-- Portfolio Category: Development Works -->
-                        <section class="main portfolio-category flex-center">
-                            <div class="section-header responsive">
-                                <h2 class="text-xlarge">Development Works</h2>
-                            </div>
-
-                            <div class="flex-row">
-                                <p class="text-medium">In the realm of development, I excel in building dynamic and responsive websites with HTML and CSS, ensuring an engaging user experience. Additionally, I'm proficient in PHP for crafting interactive web applications.</p>
-                                <p class="text-medium">I also have a strong foundation in mobile app development using Android Studio and database management with SQLite. From front-end to back-end, I'm equipped to turn your development projects into functional and user-friendly solutions.</p>
-                            </div>
-
-                            <!-- Sample Development Work Cards (Repeat for other works) -->
-                            <div class="cards flex-row flex-around filter-content">
-                                <div class="portfolio-card cat2-development">
-                                    <a class="portfolio-show" id="c2-reservation-app">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/development/portfolio/mobile/1/L04_Before1.png" alt="Development Work 1">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">Mobile Reservation App</h3>
-                                            <p class="text-medium">Software: Android Studio</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
+                                <div class="flex-row">
+                                    <p class="text-medium">I specialize in creating visually stunning designs using industry-standard tools like Adobe Illustrator, Photoshop, and XD. Whether it's crafting captivating logos, sleek user interfaces, or striking marketing materials, my design work ensures a powerful visual impact.</p>
+                                    <p class="text-medium">My design skills extend to web and mobile app interfaces, print materials, and digital graphics, making me a versatile designer capable of bringing your creative visions to life.</p>
                                 </div>
 
-                                <div class="portfolio-card cat2-development">
-                                    <a class="portfolio-show" id="c2-songs-list-app">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/development/portfolio/mobile/2/1.1.png" alt="Development Work 2">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">Mobile Songs List App</h3>
-                                            <p class="text-medium">Software: Android Studio, SQLite</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
+                                <!-- Sample Design Work Cards (Repeat for other works) -->
+                                <div class="cards flex-row flex-around filter-content">
+                                    <div class="portfolio-card cat1-design">
+                                        <a class="portfolio-show" id="c1-maldives-special">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/design/portfolio/Ai/logo-ai1.JPG" alt="Design Work 1">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">Maldives Special</h3>
+                                                <p class="text-medium">Design Works: Adobe Illustrator</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                            <!-- New div for hover effect -->
+                                            <div class="portfolio-hover">
+                                                <h3 class="text-medium">Maldives Special</h3>
+                                                <p class="text-small">Year of Completion: 2023</p>
+
+                                                <div class="spacer"></div>
+                                                <!-- Add a button or link to the respective page -->
+                                                <div class="content-page">
+                                                    <a href="maldives-special.html" class="button">View Details</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="portfolio-card cat1-design">
+                                        <a class="portfolio-show" id="c1-guarana-antartica">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/design/portfolio/Ps/logo-ps1.jpg" alt="Design Work 1">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">Guarana Antarctica</h3>
+                                                <p class="text-medium">Design Works: Adobe Photoshop</p>
+                                                <p class="text-small">Year of Completion: 2022</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="portfolio-card cat1-design">
+                                        <a class="portfolio-show" id="c1-the-right-bakery">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/design/portfolio/Xd/1/logo-xd1.png" alt="Design Work 2">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">The Right Bakery</h3>
+                                                <p class="text-medium">Design Works: Adobe XD</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="portfolio-card cat1-design">
+                                        <a class="portfolio-show" id="c1-innovaxcel">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/design/portfolio/Xd/2/logo-xd2.png" alt="Design Work 3">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">InnovaXcel</h3>
+                                                <p class="text-medium">Design Works: Adobe XD</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
 
-                                <div class="portfolio-card cat2-development">
-                                    <a class="portfolio-show" id="c2-movie-reviews-website">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/development/portfolio/web/1/logo-dev1.jpg" alt="Development Work 3">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">Movie Reviews Website</h3>
-                                            <p class="text-medium">Software: HTML, CSS, php</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
+                                <div class="spacer"></div>
+                            </section>
+
+                            <!-- Portfolio Category: Development Works -->
+                            <section class="main portfolio-category flex-center development-works">
+                                <div class="section-header responsive">
+                                    <h2 class="text-xlarge">Development Works</h2>
                                 </div>
 
-                                <div class="portfolio-card cat2-development">
-                                    <a class="portfolio-show" id="c2-super-market-express">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/development/portfolio/web/2/logo-dev1.png" alt="Development Work 4">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">The Super Market Express</h3>
-                                            <p class="text-medium">Software: HTML, CSS, Bootstrap</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
+                                <div class="flex-row">
+                                    <p class="text-medium">In the realm of development, I excel in building dynamic and responsive websites with HTML and CSS, ensuring an engaging user experience. Additionally, I'm proficient in PHP for crafting interactive web applications.</p>
+                                    <p class="text-medium">I also have a strong foundation in mobile app development using Android Studio and database management with SQLite. From front-end to back-end, I'm equipped to turn your development projects into functional and user-friendly solutions.</p>
                                 </div>
-                            </div>
-                        </section>
 
-                        <div class="spacer"></div>
-                        <div id="other-works"></div><br/>
+                                <!-- Sample Development Work Cards (Repeat for other works) -->
+                                <div class="cards flex-row flex-around filter-content">
+                                    <div class="portfolio-card cat2-development">
+                                        <a class="portfolio-show" id="c2-reservation-app">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/development/portfolio/mobile/1/L04_Before1.png" alt="Development Work 1">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">Mobile Reservation App</h3>
+                                                <p class="text-medium">Software: Android Studio</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
 
-                        <!-- Portfolio Category: Other Works -->
-                        <section class="main portfolio-category flex-center">
-                            <div class="section-header responsive">
-                                <h2 class="text-xlarge">Other Works</h2>
-                            </div>
+                                    <div class="portfolio-card cat2-development">
+                                        <a class="portfolio-show" id="c2-songs-list-app">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/development/portfolio/mobile/2/1.1.png" alt="Development Work 2">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">Mobile Songs List App</h3>
+                                                <p class="text-medium">Software: Android Studio, SQLite</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
 
-                            <div class="flex-row">
-                                <p class="text-medium">Beyond design and development, I take on personal projects that allow me to showcase my creative problem-solving abilities. These projects span a wide range of interests, from personal blogs to DIY gadgets, demonstrating my diverse skills and interests.</p>
-                                <p class="text-medium">Moreover, I've dabbled in the realm of Robotic Process Automation (RPA), automating repetitive tasks to boost efficiency and productivity. My automation projects reflect my commitment to innovation and streamlining processes.</p>
-                            </div>
+                                    <div class="portfolio-card cat2-development">
+                                        <a class="portfolio-show" id="c2-movie-reviews-website">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/development/portfolio/web/1/logo-dev1.jpg" alt="Development Work 3">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">Movie Reviews Website</h3>
+                                                <p class="text-medium">Software: HTML, CSS, php</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
 
-                            <!-- Sample Other Work Cards (Repeat for other works) -->
-                            <div class="cards flex-row flex-around filter-content">
-                                <div class="portfolio-card cat3-other">
-                                    <a class="portfolio-show" id="c2-reservation-app">
-                                        <div class="flex-row flex-center">
-                                            <img class="portfolio-image" src="images/other/rpa/RPA_746x419.jpg" alt="Other Work 1">
-                                        </div>
-                                        <div class="flex-column flex-start portfolio-text">
-                                            <h3 class="text-header">E-Certification Automation</h3>
-                                            <p class="text-medium">Software: UiPath (RPA Bots)</p>
-                                            <p class="text-small">Year of Completion: 2023</p>
-                                        </div>
-                                    </a>
+                                    <div class="portfolio-card cat2-development">
+                                        <a class="portfolio-show" id="c2-super-market-express">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/development/portfolio/web/2/logo-dev1.png" alt="Development Work 4">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">The Super Market Express</h3>
+                                                <p class="text-medium">Software: HTML, CSS, Bootstrap</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
 
-                        <div class="spacer"></div>
-                        
-                        <section id="portfolio-info">
-                            <div class="main responsive" id="portfolio-info-details"></div>
-                            <div class="main responsive flex-row flex-center">
-                                <a href="#portfolio-top" class="arrow-link">
-                                    <div class="triangle"></div>
-                                </a>
-                            </div>
-                        </section>
+                                <div class="spacer"></div>
+                            </section>
+
+                            <!-- Portfolio Category: Other Works -->
+                            <section class="main portfolio-category flex-center other-works">
+                                <div class="section-header responsive">
+                                    <h2 class="text-xlarge">Other Works</h2>
+                                </div>
+
+                                <div class="flex-row">
+                                    <p class="text-medium">Beyond design and development, I take on personal projects that allow me to showcase my creative problem-solving abilities. These projects span a wide range of interests, from personal blogs to DIY gadgets, demonstrating my diverse skills and interests.</p>
+                                    <p class="text-medium">Moreover, I've dabbled in the realm of Robotic Process Automation (RPA), automating repetitive tasks to boost efficiency and productivity. My automation projects reflect my commitment to innovation and streamlining processes.</p>
+                                </div>
+
+                                <!-- Sample Other Work Cards (Repeat for other works) -->
+                                <div class="cards flex-row flex-around filter-content">
+                                    <div class="portfolio-card cat3-other">
+                                        <a class="portfolio-show" id="c2-reservation-app">
+                                            <div class="flex-row flex-center">
+                                                <img class="portfolio-image" src="images/other/rpa/RPA_746x419.jpg" alt="Other Work 1">
+                                            </div>
+                                            <div class="flex-column flex-start portfolio-text">
+                                                <h3 class="text-header">E-Certification Automation</h3>
+                                                <p class="text-medium">Software: UiPath (RPA Bots)</p>
+                                                <p class="text-small">Year of Completion: 2023</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="spacer"></div>
+                            </section>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+
+            <section id="portfolio-info">
+                <div class="main responsive" id="portfolio-info-details"></div>
+                <div class="main responsive flex-row flex-center">
+                    <a href="#portfolio-top" class="arrow-link">
+                        <div class="triangle"></div>
+                    </a>
                 </div>
             </section>
             
@@ -466,9 +475,8 @@
                 </div>
             </footer>
         </div>
-                         
-        <script src="scripts/lightbox.js"></script>
-        <script src="scripts/carousel.js"></script>
+
+        <script src="scripts/portfolio-filter.js"></script>
         <script src="scripts/footer.js"></script>
     </body>
 </html>
