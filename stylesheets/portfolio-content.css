@@ -26,12 +26,6 @@
 }
 
 
-/* Carousel */
-#carouselMaldivesSpecial {
-    margin-top: 20px;
-}
-
-
 /* Button Styles */
 .btn-primary {
     display: inline-block;
@@ -60,4 +54,65 @@
 color: #EDBDB2;
 background-color: #9B8EC5;
 border-color: #9B8EC5;
+}
+
+
+/* Carousel Styles */
+#carouselWork {
+    margin-top: 20px;
+    max-height: 600px;
+    overflow: hidden; /* Hide overflowing content */
+    background-color: #eee; /* Background color for images that don't fit */
+}
+
+.carousel-inner {
+    max-height: 100%; /* Make sure the carousel takes the full height */
+}
+
+.carousel-item img {
+    width: auto!important; /* Allow images to adjust their width */
+    max-height: 600px; /* Make sure images take the full height */
+    margin: 0 auto; /* Center images horizontally */
+    background-color: #ddd; /* Background color for images that don't fit */
+}
+
+
+/* Carousel Control Styles */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.3); /* Background color with opacity for nav controls */
+    border: 1px solid #000; /* Border color */
+    width: 40px; /* Increase the width of the controls */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #000; /* Black color for arrow icons */
+    font-size: 24px; /* Increase the font size of the arrow icons */
+    border-radius: 50%; /* Make the icons circular */
+}
+
+/* Hover effect for nav controls */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background color on hover */
+}
+
+
+/* Carousel Captions */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.carousel-caption h5 {
+    font-size: 24px; /* Caption title font size */
+    margin-bottom: 5px; /* Spacing between title and description */
+}
+
+.carousel-caption p {
+    font-size: 18px; /* Caption description font size */
+    margin-bottom: 0; /* Remove default margin for paragraphs */
 }
