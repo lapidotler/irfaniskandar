@@ -9,6 +9,7 @@ a {
     text-decoration: none;
 }
 
+
 /* Style the Bootstrap-based navigation bar */
 .navbar {
     background-color: #bbb3d6!important; /* Set your desired background color */
@@ -19,11 +20,21 @@ a {
 
 .navbar-brand img {
     max-height: 70px;
-    transition: transform 0.3s; /* Add transition for the logo scaling */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for the logo scaling and box-shadow */
 }
 
 .navbar-brand img:hover {
     transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 
+    rgba(123, 104, 184, 0.5) -1px 1px,
+    rgba(123, 104, 184, 0.4) -4px 4px, 
+    rgba(123, 104, 184, 0.3) -7px 7px, 
+    rgba(123, 104, 184, 0.2) -10px 10px,
+
+    rgba(123, 104, 184, 0.5) 1px -1px,
+    rgba(123, 104, 184, 0.4) 4px -4px, 
+    rgba(123, 104, 184, 0.3) 7px -7px, 
+    rgba(123, 104, 184, 0.2) 10px -10px,
 }
 
 .navbar-nav {
@@ -41,7 +52,6 @@ a {
     font-size: 20px; /* Adjust the font size */
     font-family: "Futura Hv BT";
 }
-
 
 /* Increase specificity to override Bootstrap styles */
 .navbar-nav .nav-item .nav-link:hover {

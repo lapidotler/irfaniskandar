@@ -14,7 +14,7 @@
 
 .icon-content img {
     width: auto;
-    height: 250px;
+    height: 250px; /* Change 'rem' to 'px' */
     border-radius: 20px;
     border: 2px solid #6C1DE6;
 }
@@ -29,31 +29,29 @@
 /* Button Styles */
 .btn-primary {
     display: inline-block;
-    font-weight: 400;
     color: #fff;
     text-align: center;
     vertical-align: middle;
     user-select: none;
     background-color: #6C1DE6;
     border: 1px solid #6C1DE6;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    padding: 10px 40px;
+    font-size: 18px;
     line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    border-radius: 10px;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
     text-decoration: none;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #9B8EC5;
-    border-color: #9B8EC5;
+    background-color: #6e4fd4;
 }
 
 .btn-primary:active {
-color: #EDBDB2;
-background-color: #9B8EC5;
-border-color: #9B8EC5;
+    color: #EDBDB2;
+    background-color: #7a65c2;
+    border-color: #7a65c2;
 }
 
 

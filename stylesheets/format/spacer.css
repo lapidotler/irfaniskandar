@@ -7,3 +7,7 @@
 .spacer-large {
     margin-bottom: 40px; /* Adjust the margin as needed */
 }
+
+.spacer-gap {
+    padding-bottom: 25px;
+}

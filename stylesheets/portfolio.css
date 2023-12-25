@@ -150,6 +150,7 @@
   align-items: center;
   opacity: 0; /* Hidden by default */
   transition: opacity 0.3s ease;
+  padding: 20px;
 }
 
 .portfolio-card:hover .portfolio-hover {

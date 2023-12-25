@@ -83,11 +83,17 @@
 /* Contact Section */
 .contact-icons {
     display: flex;
-    justify-content: space-around; /* Space icons evenly */
-    margin-top: 50px; /* Add space above icons */
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-.contact-icons a {
-    color: #343a40; /* Set the color to #343a40 (dark gray) */
-    margin: 0 30px; /* Add some space around each icon */
+.contact-icons a i {
+    color: #343a40;
+    margin: 0 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icons a i:hover {
+    color: #B76CAD;
+    transform: scale(1.1);
 }

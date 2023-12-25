@@ -54,10 +54,16 @@
     margin-top: 20px; /* Add space above icons */
 }
 
-.footer-icons a {
+.footer-icons a i {
     color: #343a40; /* Set the color to #343a40 (dark gray) */
-    margin: 0 15px; /* Add some space around each icon */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
+
+.footer-icons a i:hover {
+    color: #B76CAD;
+    transform: scale(1.1);
+}
+
 
 .copyright-text {
     font-weight: bold; 
