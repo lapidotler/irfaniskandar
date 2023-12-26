@@ -61,6 +61,7 @@
     max-height: 600px;
     overflow: hidden; /* Hide overflowing content */
     background-color: #eee; /* Background color for images that don't fit */
+    border-radius: 20px;
 }
 
 .carousel-inner {
@@ -79,8 +80,8 @@
 .carousel-control-prev,
 .carousel-control-next {
     background-color: rgba(0, 0, 0, 0.3); /* Background color with opacity for nav controls */
-    border: 1px solid #000; /* Border color */
     width: 40px; /* Increase the width of the controls */
+    border-radius: 20px;
 }
 
 .carousel-control-prev-icon,
@@ -113,4 +114,19 @@
 .carousel-caption p {
     font-size: 18px; /* Caption description font size */
     margin-bottom: 0; /* Remove default margin for paragraphs */
+}
+
+
+@media only screen and (max-width: 980px) {
+    .carousel-item img {
+        width: 100%!important;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

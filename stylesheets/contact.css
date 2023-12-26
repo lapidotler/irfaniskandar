@@ -34,7 +34,9 @@
     transition: border-color 0.3s;
 }
 
-#contact-form button {
+
+/* Add this to your CSS file */
+#emailLinkButton {
     display: inline-block;
     color: #fff;
     text-align: center;
@@ -46,34 +48,20 @@
     font-size: 18px;
     line-height: 1.5;
     border-radius: 10px;
-    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
     text-decoration: none;
+    cursor: pointer;
 }
 
-#contact-form button:hover {
+#emailLinkButton:hover {
     color: #fff;
     background-color: #6e4fd4;
 }
 
-#contact-form button:active {
+#emailLinkButton:active {
     color: #EDBDB2;
     background-color: #7a65c2;
     border-color: #7a65c2;
-    transform: scale(0.98);
-}
-
-
-/* Add some cool animations */
-@keyframes bounce {
-    0%, 45%, 100% {
-        transform: translateY(0);
-    }
-    15%, 60% {
-        transform: translateY(-10px);
-    }
-    30%, 75% {
-        transform: translateY(10px);
-    }
 }
 
 #contact-form button:hover {
