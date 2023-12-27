@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
 .icon-content img {
@@ -17,6 +18,19 @@
     height: 250px; /* Change 'rem' to 'px' */
     border-radius: 20px;
     border: 2px solid #6C1DE6;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.intro-content p {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -55,78 +69,229 @@
 }
 
 
-/* Carousel Styles */
-#carouselWork {
-    margin-top: 20px;
-    max-height: 600px;
-    overflow: hidden; /* Hide overflowing content */
-    background-color: #eee; /* Background color for images that don't fit */
-    border-radius: 20px;
+/* Image Gallery */
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
-.carousel-inner {
-    max-height: 100%; /* Make sure the carousel takes the full height */
+.column.image-out {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+    max-height: 275px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgba(237, 231, 246, 0.8); /* Change the background color with opacity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
 }
 
-.carousel-item img {
-    width: auto!important; /* Allow images to adjust their width */
-    max-height: 600px; /* Make sure images take the full height */
-    margin: 0 auto; /* Center images horizontally */
-    background-color: #ddd; /* Background color for images that don't fit */
+.column.image-out:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
-
-/* Carousel Control Styles */
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.3); /* Background color with opacity for nav controls */
-    width: 40px; /* Increase the width of the controls */
-    border-radius: 20px;
+.column.image-out img {
+    width: auto;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 0.3s;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    color: #000; /* Black color for arrow icons */
-    font-size: 24px; /* Increase the font size of the arrow icons */
-    border-radius: 50%; /* Make the icons circular */
-}
-
-/* Hover effect for nav controls */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Darker background color on hover */
-}
-
-
-/* Carousel Captions */
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
-    color: white; /* Text color */
-    padding: 10px; /* Padding around the text */
-    border-radius: 20px; /* Rounded corners */
-}
-
-.carousel-caption h5 {
-    font-size: 24px; /* Caption title font size */
-    margin-bottom: 5px; /* Spacing between title and description */
-}
-
-.carousel-caption p {
-    font-size: 18px; /* Caption description font size */
-    margin-bottom: 0; /* Remove default margin for paragraphs */
+.column.image-out:hover img {
+    filter: brightness(80%);
 }
 
 
-@media only screen and (max-width: 980px) {
-    .carousel-item img {
-        width: 100%!important;
-        height: 100%;
-        object-fit: cover;
-    }
 
-    .carousel-caption {
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+/* Image Overlay Text */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Ensure the overlay is on top of the image */
+}
+
+.column:hover .image-overlay {
+    opacity: 1; /* Show on hover */
+}
+
+.overlay-text, .caption-text {
+    text-align: center;
+    z-index: 2; /* Ensure the text is on top of the overlay */
+}
+
+.image-overlay .text-header, .caption-container .text-header {
+    font-size: 20px;
+}
+
+.image-overlay .text-medium, .caption-container .text-medium {
+    font-size: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px;
+    margin: 45px auto; /* Center horizontally with auto margins */
+    padding: 30px;
+    padding-top: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #e6d8d5; /* Adjust background color as needed */
+}
+
+.mySlides img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    object-fit: contain;
+    background-color: #eaeaea;
+}
+
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.close:hover,
+.close:focus {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    height: 40px; /* Take full height */
+    width: 40px;
+    top: 50%; /* Position vertically in the middle */
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease;
+    border-radius: 8px; /* Rounded corners for rectangular buttons */
+    background-color: lightgrey; /* Background color for arrows */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: grey;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Background for slide numbers */
+    border-radius: 8px;
+}
+
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: #141414;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.caption-text {
+    display: block;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

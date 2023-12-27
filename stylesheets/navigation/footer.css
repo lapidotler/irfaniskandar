@@ -17,6 +17,7 @@
 
 .footer-section {
     margin-bottom: 20px; /* Add space between sections */
+    margin-top: 10px;
 }
 
 .footer-title {
@@ -80,6 +81,7 @@
     }
 
     .footer-section {
-        margin-bottom: 35px; /* Add space between sections */
+        margin-bottom: 25px; /* Add space between sections */
+        margin-top: 15px;
     }
 }
