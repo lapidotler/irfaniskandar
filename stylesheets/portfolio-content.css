@@ -6,7 +6,7 @@
   
 
 /* Intro to Content */
-.icon-content {
+.icon-content, .image-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,10 +78,10 @@
 }
 
 .column.image-out {
-    width: 412px;
+    width: 400px;
     margin: 10px;
     position: relative;
-    max-height: 275px;
+    max-height: 215px;
     overflow: hidden;
     border-radius: 8px;
     background-color: rgba(237, 231, 246, 0.8); /* Change the background color with opacity */
@@ -111,7 +111,9 @@
     filter: brightness(80%);
 }
 
-
+.column.image-out .image-extra {
+    width: 100%;
+}
 
 
 /* Image Overlay Text */
@@ -276,6 +278,16 @@
     border-radius: 8px;
 }
 
+.caption-container .text-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.caption-container .text-medium {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .caption-text {
     display: block;
 }
@@ -298,8 +310,51 @@ img.hover-shadow {
 }
 
 
+/* Documentation CSS */
+.documentation {
+    text-align: left;
+}
+
+.documentation .text-header, .documentation .text-medium {
+    text-align: center;
+}
+
+.documentation .image-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.documentation img {
+    width: 500px;
+    height: auto;
+    border: 2px solid #141414;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.documentation .logo-dev img {
+    width: 900px;
+}
+
+.documentation .text-medium {
+    padding-top: 0;
+    font-size: 22px;
+}
+
+.documentation .text-med {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
 
 /* Media query for screens with a maximum width of 900px */
+@media (max-width: 1000px) {
+    .documentation .logo-dev img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 900px) {
     .prev,
     .next {
@@ -308,5 +363,11 @@ img.hover-shadow {
 
     .close {
         top: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .documentation img {
+        width: 110%;
     }
 }
