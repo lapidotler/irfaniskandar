@@ -78,7 +78,7 @@
 }
 
 .column.image-out {
-    flex: 0 0 calc(33.33% - 20px);
+    width: 412px;
     margin: 10px;
     position: relative;
     max-height: 275px;
@@ -103,6 +103,8 @@
     border-radius: 8px;
     object-fit: cover;
     transition: 0.3s;
+    align-items: center;
+    justify-content: center;
 }
 
 .column.image-out:hover img {
@@ -221,9 +223,8 @@
 .next {
     cursor: pointer;
     position: absolute;
-    height: 40px; /* Take full height */
     width: 40px;
-    top: 50%; /* Position vertically in the middle */
+    top: 42.5%; /* Position vertically in the middle */
     padding: 10px;
     color: black;
     font-weight: bold;
@@ -294,4 +295,18 @@ img.hover-shadow {
 
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    .prev,
+    .next {
+        top: 40%;
+    }
+
+    .close {
+        top: 0;
+    }
 }
