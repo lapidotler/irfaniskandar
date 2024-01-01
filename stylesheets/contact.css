@@ -91,3 +91,9 @@
     color: #B76CAD;
     transform: scale(1.1);
 }
+
+
+#contact-section p.text-med {
+    margin: 0;
+    padding: 0;
+}

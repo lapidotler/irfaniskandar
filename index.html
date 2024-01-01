@@ -55,86 +55,165 @@
                 </div>
             </nav>
 
-            <div class="container-fluid">
-                <!-- Intro Section -->
-                <div class="header flex-column flex-center responsive">
-                    <p class="text-xlarge">Welcome to the Portfolio</p>
-                    <p class="text-large">First of all, my name is...</p>
+            <section id="home-section" class="main flex-column responsive">
+                <div class="container-fluid">
+                    <!-- Intro Section -->
+                    <div class="header flex-column flex-center responsive">
+                        <p class="text-xlarge">Welcome to the Portfolio</p>
+                        <p class="text-large">First of all, my name is...</p>
 
-                    <img src="images/logo2.png" width="auto" height="250px" alt="Your Image">
+                        <img src="images/logo2.png" width="auto" height="250px" alt="Your Image">
 
-                    <p class="text-xnarrow">Interested in what I have to offer? Know more about me by clicking the arrow below!</p>
-                    <a href="#home-about" class="arrow-link">
-                        <div class="triangle"></div>
-                    </a>
-                </div>
+                        <p class="text-xnarrow">Interested in what I have to offer? Know more about me by clicking the arrow below!</p>
+                        <a href="#home-about" class="arrow-link">
+                            <div class="triangle"></div>
+                        </a>
+                    </div>
 
-                <!-- About Me Section -->
-                <section class="about-section flex-column responsive" id="home-about">
-                    <h2>Who are you?</h2>
-                  
-                    <div class="about-container">
-                        <div class="about-content">
-                            <p class="text-med">Hello there! My name is Irfan Iskandar. I am currently a student who is studying in their second year at Republic Polytechnic. Right now, I am pursuing a diploma in Digital Design and Development.</p>
-                            <p class="text-med">Passionate about learning, I strive for happiness and excellence through hard work and effort, demonstrating my ability and willingness to prove my abilities.</p>
-                            <p class="text-med">This is my personal portfolio where you could learn more about who I am and what I can do.</p>
-                            <p class="text-med">Wish to know more? Click the button below!</p>
-                            <button class="button button5" href="about.html">Learn More >></button>
-                        </div>
-                
-                        <div class="about-image-container">
-                            <div class="additional-shape"></div>
-                            <div class="image-border">
+                    <!-- About Me Section -->
+                    <section class="about-section flex-column responsive" id="home-about">
+                        <h2 class="text-xlarge">Who am I?</h2>
+
+                        <div class="spacer-large"></div>
+
+                        <div class="about-container">
+                            <div class="about-content">
+                                <p class="text-med">Hello there! My name is Irfan Iskandar. I am currently a student studying in their second year at Republic Polytechnic, pursuing a diploma in Digital Design and Development.</p>
+                                <div class="spacer"></div>
+
+                                <p class="text-med">Passionate about learning, I strive for happiness and excellence through hard work and effort, demonstrating my ability and willingness to prove my abilities.</p>
+                                <div class="spacer"></div>
+
+                                <p class="text-med">This is my personal portfolio where you can learn more about who I am and what I can do.</p>
+                                <div class="spacer"></div>
+
+                                <p class="text-med">Wish to know more? Click the button below!</p>
+                                <div class="spacer"></div>
+
+                                <a class="btn button5" href="about.html">Learn More >></a>
+                            </div>
+
+                            <div class="about-image-container">
                                 <img src="images/profile/imgprofile.png" alt="About Me Image">
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Portfolio Section -->
-                <section class="portfolio-section flex-column responsive">
-                    <h2>Portfolio</h2>
-                    <p>Check out some of my work below.</p>
-
-                    <div class="portfolio-display">
-                        <div class="portfolio-item">
-                            <img src="portfolio-image1.jpg" alt="Portfolio Image 1">
-                            <h3>Project Title 1</h3>
-                            <p>Graphic Design</p>
-                            <p>2022</p>
+                    <!-- Portfolio Section -->
+                    <section class="main portfolio-category flex-center design-works">
+                        <div class="section-header responsive">
+                            <h2 class="text-xlarge">Portfolio</h2>
                         </div>
 
-                        <div class="portfolio-item">
-                            <img src="portfolio-image2.jpg" alt="Portfolio Image 2">
-                            <h3>Project Title 2</h3>
-                            <p>UI/UX Design</p>
-                            <p>2023</p>
+                        <div class="flex-row">
+                            <p class="text-medium">
+                                Explore a curated selection of my best works, spanning graphic design, UI/UX design, and web development. Each project is a testament to creativity, precision, and a passion for crafting exceptional digital experiences.
+                            </p>
+
+                            <p class="text-medium">
+                                Below showcases some of the best works that I have done so far (in my opinion). Take a glimpse into my portfolio below.
+                            </p>
+                        </div>                        
+
+                        <div class="cards flex-row flex-around">
+                            <!-- UI/UX Design Work -->
+                            <div class="portfolio-card cat1-design">
+                                <a class="portfolio-show" id="c1-innovaxcel">
+                                    <div class="flex-row flex-center">
+                                        <img class="portfolio-image" src="images/design/portfolio/Xd/2/logo-xd2.png" alt="Design Work 3">
+                                    </div>
+                                    <div class="flex-column flex-start portfolio-text">
+                                        <h3 class="text-header">InnovaXcel</h3>
+                                        <p class="text-medium">Design Works: Adobe XD</p>
+                                        <p class="text-small">Year of Completion: 2023</p>
+                                    </div>
+                                    <div class="portfolio-hover">
+                                        <h3 class="text-medium">InnovaXcel</h3>
+                                        <p class="text-small">Year of Completion: 2023</p>
+
+                                        <div class="spacer"></div>
+                                        <!-- Add a button or link to the respective page -->
+                                        <div class="content-page">
+                                            <a href="innovaxcel.html" class="button text-medium">View Details</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Development Work -->
+                            <div class="portfolio-card cat2-development">
+                                <a class="portfolio-show" id="c2-moviecube-sg">
+                                    <div class="flex-row flex-center">
+                                        <img class="portfolio-image" src="images/development/portfolio/web/2/LogoWhiteBG.png" alt="Development Work 4">
+                                    </div>
+                                    <div class="flex-column flex-start portfolio-text">
+                                        <h3 class="text-header">MovieCube SG</h3>
+                                        <p class="text-medium">Software: HTML, CSS, php, Bootstrap</p>
+                                        <p class="text-small">Year of Completion: 2023</p>
+                                    </div>
+                                    <div class="portfolio-hover">
+                                        <h3 class="text-medium">MovieCube SG</h3>
+                                        <p class="text-small">Year of Completion: 2023</p>
+
+                                        <div class="spacer"></div>
+                                        <!-- Add a button or link to the respective page -->
+                                        <div class="content-page">
+                                            <a href="moviecube-sg.html" class="button text-medium">View Details</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Other Work -->
+                            <div class="portfolio-card cat3-other">
+                                <a class="portfolio-show" id="c3-ecert-automation">
+                                    <div class="flex-row flex-center">
+                                        <img class="portfolio-image" src="images/other/rpa/RPA_746x419.jpg" alt="Other Work 1">
+                                    </div>
+                                    <div class="flex-column flex-start portfolio-text">
+                                        <h3 class="text-header">E-Certification Automation</h3>
+                                        <p class="text-medium">Software: UiPath (RPA Bots)</p>
+                                        <p class="text-small">Year of Completion: 2023</p>
+                                    </div>
+                                    <div class="portfolio-hover">
+                                        <h3 class="text-medium">E-Certification Automation</h3>
+                                        <p class="text-small">Year of Completion: 2023</p>
+
+                                        <div class="spacer"></div>
+                                        <!-- Add a button or link to the respective page -->
+                                        <div class="content-page">
+                                            <a href="ecert-automation.html" class="button text-medium">View Details</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
 
-                        <div class="portfolio-item">
-                            <img src="portfolio-image3.jpg" alt="Portfolio Image 3">
-                            <h3>Project Title 3</h3>
-                            <p>Web Development</p>
-                            <p>2021</p>
+                        <div class="spacer"></div>
+
+                        <div class="flex-row">
+                            <p class="text-medium">If you want to check out more of the works I've done, click below!</p> 
                         </div>
-                    </div>
-                </section>
 
-                <!-- Contact Me Section -->
-                <section class="contact-section flex-column responsive">
-                    <h2>Contact Me</h2>
-                    <p>If you would like to get in touch with me, feel free to click on any social media icons below!</p>
-                    <p>For any other work-related matters, please do <a style="color: #343a40; text-decoration-line: underline;" href="contact.html">email me instead!</a></p>
-                    <div class="contact-icons">
-                        <a href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-5x"></i></a>
-                        <a href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-5x"></i></a>
-                        <a href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-5x"></i></a>
-                        <a href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-5x"></i></a>
-                    </div>
-                </section>
-            </div>
+                        <!-- Portfolio Button -->
+                        <a class="btn button5" href="portfolio.html">See More >></a>
+                    </section>
 
-            <div class="spacer-gap"></div>
+                    <!-- Contact Me Section -->
+                    <section class="contact-section flex-column responsive">
+                        <h2>Contact Me</h2>
+                        <p>If you would like to get in touch with me, feel free to click on any social media icons below!</p>
+                        <p>For any other work-related matters, please do <a style="color: #343a40; text-decoration-line: underline;" href="contact.html">email me instead!</a></p>
+                        
+                        <div class="contact-icons">
+                            <a target="_blank" href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-5x"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-5x"></i></a>
+                            <a target="_blank" href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-5x"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-5x"></i></a>
+                        </div>
+                    </section>
+                </div>
+            </section>
 
             <!-- Footer Bar -->
             <footer class="custom-footer">
@@ -150,17 +229,17 @@
                     <div class="footer-section">
                         <h2 class="footer-title">Portfolio</h2>
                         <ul class="footer-list">
-                            <li><a href="portfolio.html#design-works">Design</a></li>
-                            <li><a href="portfolio.html#development-works">Development</a></li>
-                            <li><a href="portfolio.html#other-works">Others</a></li>
+                            <li><a href="portfolio.html#design-works-page">Design</a></li>
+                            <li><a href="portfolio.html#development-works-page">Development</a></li>
+                            <li><a href="portfolio.html#other-works-page">Others</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
                         <div class="footer-icons">
-                            <a href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
-                            <a href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-3x"></i></a>
-                            <a href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-3x"></i></a>
+                            <a target="_blank" href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-3x"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a target="_blank" href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-3x"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-3x"></i></a>
                         </div>
                         <p class="copyright-text">Copyright &copy; Irfan Iskandar</p>
                     </div>

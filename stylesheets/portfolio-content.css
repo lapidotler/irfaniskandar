@@ -53,6 +53,13 @@
     border: 2px solid #141414;
 }
 
+iframe {
+    max-height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    border: 2px solid #141414;
+}
+
 
 /* Button Styles */
 .btn-primary {
@@ -389,6 +396,12 @@ img.hover-shadow {
 
     .close {
         top: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    iframe {
+        width: 100%;
     }
 }
 
