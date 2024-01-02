@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Mobile Songs List App</title>
+        <title>Mobile Songlist App</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -59,16 +59,16 @@
             <section id="mobile-reservation" class="main flex-column responsive">
                 <!-- Section Header -->
                 <div class="section-header responsive">
-                    <h2 class="text-xlarge">Mobile Songs List App</h2>
+                    <h2 class="text-xlarge">Mobile Songlist App</h2>
                 </div>
 
                 <!-- Intro to Content -->
-                <div class="icon-content">
+                <div class="icon-content mobile">
                     <!-- Portfolio Image/Logo -->
-                    <img src="images/design/portfolio/Ai/logo-ai1.JPG" alt="Maldives Special Icon">
+                    <img src="images/development/portfolio/mobile/2/1.1.png">
                 </div>
                 <div class="intro-content">
-                    <p class="text-medium">Mobile Playlist-Type Song Application</p>
+                    <p class="text-medium">Mobile Playlist-Type Song Application (CRUD)</p>
                     <p class="text-medium">Software: Android Studio, SQLite</p>
                     <p class="text-medium">Date of Completion: 19/07/2023</p>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="normal-content">
                     <h2 class="text-header">Exploring Android ListView and Data Handling</h2>
                     <p class="text-med">
-                        In this mobile songlist app, the focus shifted towards mastering Android's ListView and data handling capabilities. 
+                        In this mobile songlist app, the focus shifted towards mastering Android's ListView and data handling capabilities. It also focuses on the implementation of SQLite for data storage and retrieval.
                     </p>
 
                     <p class="text-med">
@@ -101,9 +101,9 @@
                         
                         <div class="spacer-gap"></div>
                         
-                        <h2 class="text-large">3. National Day Parade Theme Song Compilation</h2>
+                        <h2 class="text-large">3. CRUD (Create, Retrieve, Update, Delete) Functions</h2>
                         <p class="text-med">
-                            This project delved into the intricacies of database operations, focusing on data insertion, retrieval, update, and delete functionalities. The journey included an exploration of SharedPreferences and understanding the Android Activity lifecycle.
+                            This project delved into the intricacies of database operations, focusing on data creation/insertion, retrieval, update, and delete functionalities. The journey included an exploration of SharedPreferences and understanding the Android Activity lifecycle.
                         </p>
                         
                         <div class="text-large"></div>
@@ -121,6 +121,8 @@
                         Below showcases different aspects of the project, showcasing the different processes that take place when running the app.
                     </p>
 
+                    <div class="spacer"></div>
+
                     <p class="text-med">
                         Click on the images to view them in full size, along with their respective information.
                     </p>
@@ -129,33 +131,35 @@
                     <div class="row">
                         <div class="column image-out">
                             <div class="image-overlay" onclick="openModal();currentSlide(1)">
-                                <p class="text-header overlay-text">Reservation Form (Pt. 1)</p>
-                                <p class="text-medium overlay-text">First Half of Reservation Form</p>
+                                <p class="text-header overlay-text">Page - Create/Add Songs</p>
+                                <p class="text-medium overlay-text">1st Page: Adding Song Information (Crud)</p>
                             </div>
-                            <img src="images/development/portfolio/mobile/1/L04_Before1.png" alt="Reservation Form (Pt. 1)" class="hover-shadow cursor">
-                            <img src="images/development/portfolio/mobile/1/L04_After1.png" alt="Reservation Form (Pt. 1)" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/1.2.png" alt="Add Song" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/1.3.png" alt="Add Song" class="hover-shadow cursor">
                         </div>
                         <div class="column image-out">
                             <div class="image-overlay" onclick="openModal();currentSlide(2)">
-                                <p class="text-header overlay-text">Reservation Form (Pt. 2)</p>
-                                <p class="text-medium overlay-text">Second Half of Reservation Form w/ Submission Button</p>
+                                <p class="text-header overlay-text">Page - Retrieve Songs</p>
+                                <p class="text-medium overlay-text">2nd Page: Retrieving Songs in a Custom ListView (cRud)</p>
                             </div>
-                            <img src="images/development/portfolio/mobile/1/L04_Before2.png" alt="Reservation Form (Pt. 2)" class="hover-shadow cursor">
-                            <img src="images/development/portfolio/mobile/1/L04_After2.png" alt="Sketches" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/2.1.png" alt="Retrieve Song" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/2.2.png" alt="Retrieve Song" class="hover-shadow cursor">
                         </div>
                         <div class="column image-out">
                             <div class="image-overlay" onclick="openModal();currentSlide(3)">
-                                <p class="text-header overlay-text">Reservation Form Submitted (Pt. 1)</p>
-                                <p class="text-medium overlay-text">Sample Toast Message, Listing Information from Submitted Reservation Form</p>
+                                <p class="text-header overlay-text">Page - Edit Existing Song</p>
+                                <p class="text-medium overlay-text">Page to Edit Information of Existing Song (crUd)</p>
                             </div>
-                            <img src="images/development/portfolio/mobile/1/L04_After3.png" alt="Reservation Form Submitted (Pt. 1)" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/3.1.png" alt="Edit Song" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/3.2.png" alt="Edit Song" class="hover-shadow cursor">
                         </div>
                         <div class="column image-out">
                             <div class="image-overlay" onclick="openModal();currentSlide(4)">
-                                <p class="text-header overlay-text">Reservation Form Submitted (Pt. 2)</p>
-                                <p class="text-medium overlay-text">Submitted Form Information Displayed Below Page</p>
+                                <p class="text-header overlay-text">Page - Delete Existing Song</p>
+                                <p class="text-medium overlay-text">Page to Delete Information of Existing Song (cruD)</p>
                             </div>
-                            <img src="images/development/portfolio/mobile/1/L04_After3.png" alt="Reservation Form Submitted (Pt. 2)" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/4.1.png" alt="Delete Song" class="hover-shadow cursor">
+                            <img src="images/development/portfolio/mobile/2/4.2.png" alt="Delete Song" class="hover-shadow cursor">
                         </div>
                     </div>
 
@@ -164,39 +168,41 @@
                         <div class="modal-content">
                             <div class="mySlides">
                                 <div class="numbertext">1 / 4</div>
-                                <img src="images/development/portfolio/mobile/1/L04_Before1.png">
-                                <img src="images/development/portfolio/mobile/1/L04_After1.png">
+                                <img src="images/development/portfolio/mobile/2/1.2.png">
+                                <img src="images/development/portfolio/mobile/2/1.3.png">
                                 <div class="caption-container">
-                                    <p class="text-header caption-text">Reservation Form (Pt. 1)</p>
-                                    <p class="text-medium caption-text">First Half of Reservation Form</p>
+                                    <p class="text-header caption-text">Page - Create/Add Songs</p>
+                                    <p class="text-medium caption-text">1st Page: Adding Song Information (Crud)</p>
                                 </div>
                             </div>
 
                             <div class="mySlides">
                                 <div class="numbertext">2 / 4</div>
-                                <img src="images/development/portfolio/mobile/1/L04_Before2.png">
-                                <img src="images/development/portfolio/mobile/1/L04_After2.png">
+                                <img src="images/development/portfolio/mobile/2/2.1.png">
+                                <img src="images/development/portfolio/mobile/2/2.2.png">
                                 <div class="caption-container">
-                                    <p class="text-header caption-text">Reservation Form (Pt. 2)</p>
-                                    <p class="text-medium caption-text">Second Half of Reservation Form w/ Submission Button</p>
+                                    <p class="text-header caption-text">Page - Retrieve Songs</p>
+                                    <p class="text-medium caption-text">2nd Page: Retrieving Songs in a Custom ListView (cRud)</p>
                                 </div>
                             </div>
 
                             <div class="mySlides">
                                 <div class="numbertext">3 / 4</div>
-                                <img src="images/development/portfolio/mobile/1/L04_After3.png">
+                                <img src="images/development/portfolio/mobile/2/3.1.png">
+                                <img src="images/development/portfolio/mobile/2/3.2.png">
                                 <div class="caption-container">
-                                    <p class="text-header caption-text">Reservation Form Submitted (Pt. 1)</p>
-                                    <p class="text-medium caption-text">Sample Toast Message, Listing Information from Submitted Reservation Form</p>
+                                    <p class="text-header caption-text">Page - Edit Existing Song</p>
+                                    <p class="text-medium caption-text">Page to Edit Information of Existing Song (crUd)</p>
                                 </div>
                             </div>
 
                             <div class="mySlides">
                                 <div class="numbertext">4 / 4</div>
-                                <img src="images/development/portfolio/mobile/1/L04_After4.png">
+                                <img src="images/development/portfolio/mobile/2/4.1.png">
+                                <img src="images/development/portfolio/mobile/2/4.2.png">
                                 <div class="caption-container">
-                                    <p class="text-header caption-text">Reservation Form Submitted (Pt. 2)</p>
-                                    <p class="text-medium caption-text">Submitted Form Information Displayed Below Page</p>
+                                    <p class="text-header caption-text">Page - Delete Existing Song</p>
+                                    <p class="text-medium caption-text">Page to Delete Information of Existing Song (cruD)</p>
                                 </div>
                             </div>
 

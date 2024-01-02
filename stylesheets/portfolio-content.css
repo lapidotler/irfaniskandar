@@ -129,8 +129,20 @@ iframe {
     border-radius: 8px;
     object-fit: cover;
     transition: 0.3s;
+}
+
+.row.web .column.image-out {
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.row.web .column.image-out img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 0.3s;
 }
 
 .column.image-out:hover img {
