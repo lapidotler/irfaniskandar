@@ -78,6 +78,7 @@
 .contact-icons {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
@@ -96,4 +97,79 @@
 #contact-section p.text-med {
     margin: 0;
     padding: 0;
+}
+
+
+/* stylesheets/style.css */
+/* Transition effect for the Thank You message */
+#thankYouMessage {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#thankYouMessage.show {
+    opacity: 1;
+}
+
+
+/* Contact Information Section Styles */
+#contact-info {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact-box-container {
+    display: flex;
+    justify-content: space-around; /* Adjust this property as needed */
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 2.5px rgba(159, 99, 193, 1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact-box h3 {
+    color: #333;
+}
+
+.contact-box a {
+    color: #007bff;
+}
+
+.contact-box .text-medium {
+    font-size: 24px;
+}
+
+.contact-box .text-med {
+    font-size: 18px;
+}
+
+.contact-box .line {
+    margin: 10px 0;
+    border-bottom: 2px solid #333;
+    width: 10px;
+    align-self: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 785px) {
+    .contact-icons a {
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .contact-icons {
+        margin-top: 25px;
+    }
 }

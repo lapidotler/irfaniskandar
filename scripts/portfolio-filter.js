@@ -17,19 +17,35 @@ $(document).ready(function () {
                 $(".design-works").show(500);
                 $(".development-works").hide(500);
                 $(".other-works").hide(500);
+
+                $("#design-gap").show(500);
+                $("#development-gap").hide(500);
+                $("#other-gap").hide(500);
             } else if (filter === "Development") {
                 $(".development-works").show(500);
                 $(".design-works").hide(500);
                 $(".other-works").hide(500);
+
+                $("#development-gap").show(500);
+                $("#design-gap").hide(500);
+                $("#other-gap").hide(500);
             } else if (filter === "Others") {
                 $(".other-works").show(500);
                 $(".design-works").hide(500);
                 $(".development-works").hide(500);
+
+                $("#other-gap").show(500);
+                $("#design-gap").hide(500);
+                $("#development-gap").hide(500);
             } else {
                 $(".filter-content").html("Error!"); 
             }
         } else {
             $(".portfolio-category").show(500);
+
+            $("#design-gap").show(500);
+            $("#development-gap").show(500);
+            $("#other-gap").show(500);
         }
     });
 });

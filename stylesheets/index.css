@@ -36,8 +36,8 @@
     max-width: 400px; /* Limit the maximum width for the image container */
     margin-left: 20px; /* Add some space between content and image */
     background-color: #BBB3D9;
-    border-radius: 15px;
-    box-shadow: 5px 5px 50px #9B8EC5;
+    border-radius: 20px;
+    box-shadow: 20px 20px 1px #9B8EC5;
     border-color: #333;
     border-style: solid;
 }

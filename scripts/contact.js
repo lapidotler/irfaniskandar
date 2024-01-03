@@ -10,12 +10,28 @@ function validateForm() {
 }
 
 function showThankYouMessage() {
-    // Hide the form
-    document.getElementById('contactForm').style.display = 'none';
+    // Hide the form with a smooth transition
+    const contactForm = document.getElementById('contactForm');
+    contactForm.style.opacity = 0;
+    contactForm.style.transition = 'opacity 0.5s ease-in-out';
+
+    // Set display to 'none' for the contact form when opacity is 0
+    contactForm.addEventListener('transitionend', function() {
+        if (contactForm.style.opacity === '0') {
+            contactForm.style.display = 'none';
+        }
+    });
 
     // Show the Thank You message
-    document.getElementById('thankYouMessage').style.display = 'block';
+    const thankYouMessage = document.getElementById('thankYouMessage');
+    thankYouMessage.style.display = 'block';
 
+    // Trigger reflow to enable the transition
+    contactForm.offsetHeight;
+
+    // Add the "show" class to the Thank You message to apply the transition
+    thankYouMessage.classList.add('show');
+    
     // Hide the email link (optional)
     const emailLink = document.getElementById('emailLink');
     if (emailLink) {
