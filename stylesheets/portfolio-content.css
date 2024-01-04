@@ -393,6 +393,57 @@ img.hover-shadow {
     padding-top: 5px;
 }
 
+.documentation ul li {
+    list-style-type: disc;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px!important;
+    margin-left: 50px;
+}
+
+.documentation-box-container {
+    display: flex;
+    justify-content: space-around; /* Adjust this property as needed */
+    flex-wrap: wrap;
+}
+
+.documentation-box {
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 2.5px rgba(159, 99, 193, 1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.documentation-box h3 {
+    color: #333;
+}
+
+.documentation-box a {
+    color: #007bff;
+}
+
+.documentation-box .text-medium {
+    font-size: 24px;
+}
+
+.documentation-box i {
+    align-self: center;
+    margin: 10px;
+}
+
+.documentation-box .line {
+    margin: 10px 0;
+    border-bottom: 3px solid #333;
+    width: 50px;
+    align-self: center;
+}
+
 /* Media query for screens with a maximum width of 900px */
 @media (max-width: 1000px) {
     .documentation .logo-dev img {
@@ -420,6 +471,11 @@ img.hover-shadow {
 @media (max-width: 800px) {
     .normal-content video {
         width: 95%;
+    }
+
+    .icon-content img {
+        width: 90%;
+        height: auto;
     }
 }
 
