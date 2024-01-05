@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>E-Cert Automation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo_only.png">
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/spacer.css"/>
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footerTest.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/navigation/footer.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="stylesheets/portfolio-content.css"/>
+    </head>
+    <body>
+        <div class="body-content" style="background-color: #dbb5d6">
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_main.png" alt="Logo" width="auto" height="100px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Portfolio Works Section -->
+            <section id="the-super-market-express" class="main flex-column responsive">
+                <!-- Section Header -->
+                <div class="section-header responsive">
+                    <h2 class="text-xlarge">E-Certification Automation</h2>
+                </div>
+
+                <!-- Intro to Content -->
+                <div class="icon-content">
+                    <!-- Portfolio Image/Logo -->
+                    <img src="images/other/rpa/RPA_746x419.jpg">
+                </div>
+                <div class="intro-content">
+                    <p class="text-medium">RPA Online Certification Machine</p>
+                    <p class="text-medium">Software: RPA (Robotic Process Automation) Bots</p>
+                    <p class="text-medium">Platform Used: UiPath Studio</p>
+                    <p class="text-medium">Date of Completion: 14/09/2023</p>
+                </div>
+
+                <!-- Content -->
+                <div class="normal-content">
+                    <h2 class="text-header">Introduction to the Project</h2>
+                    <p class="text-med">
+                        This project focuses on automating the ecert generation process accurately and efficiently. The goal is to create a workflow that streamlines the process and enhances productivity.
+                    </p>
+
+                    <div class="spacer"></div>
+
+                    <p class="text-med">
+                        The approach involves using UiPath activities for reading Excel data, replacing specific text in a Word document, and saving the document as a PDF. This project aims to automate the entire process, reducing manual efforts and ensuring accuracy.
+                    </p>
+
+                    <div class="spacer-gap"></div>
+
+                    <h2 class="text-header">Gallery of the Project</h2>
+                    <p class="text-med">
+                        Explore snapshots of the project before and after the RPA automation process. The gallery below showcases the integral process of the automation, including the documents, emails, and PDFs involved.
+                    </p>
+
+                    <div class="spacer"></div>
+
+                    <p class="text-med">
+                        Click on the images to view them in full size, accompanied by relevant information about each stage of the workflow.
+                    </p>
+                    
+                    <!-- Add this where you want your image gallery to appear -->
+                    <div class="row web">
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(1)">
+                                <p class="text-header overlay-text">E-Cert before Automation</p>
+                                <p class="text-medium overlay-text">Sample Word Certificate Document</p>
+                            </div>
+                            <img src="images/other/rpa/CertificateSample1.jpg" alt="Cert Before" class="hover-shadow cursor" style="width: auto; height: 100%;">
+                        </div>
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(2)">
+                                <p class="text-header overlay-text">E-Cert after Automation</p>
+                                <p class="text-medium overlay-text">Word Certificate Document after Automation; Using Name in Excel</p>
+                            </div>
+                            <img src="images/other/rpa/Irfan Iskandar Bin Abdul Rahim_page-0001.jpg" alt="Cert After" class="hover-shadow cursor" style="width: auto; height: 100%;">
+                        </div>
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(3)">
+                                <p class="text-header overlay-text">Automated Email</p>
+                                <p class="text-medium overlay-text">Image of Sent-Email of Automated E-Cert Document</p>
+                            </div>
+                            <img src="images/other/rpa/Screenshot 2023-12-12 150157.png" alt="product-bread2" class="hover-shadow cursor">
+                        </div>
+                    </div>
+
+                    <h2 class="text-header">Project's RPA Automation "Code"</h2>
+                    <p class="text-med">
+                        Below showcases the workflow of the RPA automation process, with the use of UiPath activities to automate the ecert generation process.
+                    </p>
+
+                    <div class="spacer"></div>
+
+                    <p class="text-med">
+                        Click on the images to view them in full size, accompanied by relevant information about each stage of the workflow.
+                    </p>
+
+                    <!-- Add this where you want your image gallery to appear -->
+                    <div class="row web">
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(4)">
+                                <p class="text-header overlay-text">Main Sequence & Flowchart</p>
+                                <p class="text-medium overlay-text">Introduction to RPA E-Cert Automation Process</p>
+                            </div>
+                            <img src="images/other/rpa/code/1.png" alt="main-section" class="hover-shadow cursor">
+                        </div>
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(2)">
+                                <p class="text-header overlay-text">Inside Flowchart</p>
+                                <p class="text-medium overlay-text">Page of Processes Inside Flowchart</p>
+                            </div>
+                            <img src="images/other/rpa/code/2.png" alt="flowchart" class="hover-shadow cursor" style="width: auto; height: 100%;">
+                        </div>
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(3)">
+                                <p class="text-header overlay-text">Read Range Workbook</p>
+                                <p class="text-medium overlay-text">Bread Product Page; Modal Window of 1 Bread Product</p>
+                            </div>
+                            <img src="images/other/rpa/code/3.png" alt="product-bread2" class="hover-shadow cursor">
+                        </div>
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(4)">
+                                <p class="text-header overlay-text">Contact Us Page</p>
+                                <p class="text-medium overlay-text">Page for Listing Contact Information & Socials</p>
+                            </div>
+                            <img src="images/other/rpa/code/4.png" alt="Contact Us" class="hover-shadow cursor" style="width: auto; height: 100%;">
+                        </div>
+                        <div class="column image-out">
+                            <div class="image-overlay" onclick="openModal();currentSlide(4)">
+                                <p class="text-header overlay-text">FAQ Page</p>
+                                <p class="text-medium overlay-text">Page for Queries & Questions w/ Answers</p>
+                            </div>
+                            <img src="images/other/rpa/code/5.png" alt="faq" class="hover-shadow cursor" style="width: auto; height: 100%;">
+                        </div>
+                    </div>
+
+                    <div id="myModal" class="modal" style="display: none;">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 5</div>
+                                <img src="images/development/portfolio/web/1/homepage.png">
+                                <img src="images/development/portfolio/web/1/Code/1.png">
+                                <div class="caption-container">
+                                    <p class="text-header caption-text">Homepage</p>
+                                    <p class="text-medium caption-text">Main Page of The Super Market Express</p>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 5</div>
+                                <img src="images/development/portfolio/web/1/product-bread1.png">
+                                <img src="images/development/portfolio/web/1/Code/2.png">
+                                <div class="caption-container">
+                                    <p class="text-header caption-text">Products Page (Bread Pt. 1)</p>
+                                    <p class="text-medium caption-text">Bread Product Page; 1/3 of Product Pages</p>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 5</div>
+                                <img src="images/development/portfolio/web/1/product-bread2.png">
+                                <img src="images/development/portfolio/web/1/Code/3.png">
+                                <div class="caption-container">
+                                    <p class="text-header caption-text">Products Page (Bread Pt. 2)</p>
+                                    <p class="text-medium caption-text">Bread Product Page; Modal Window of 1 Bread Product</p>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 5</div>
+                                <img src="images/development/portfolio/web/1/contact-us.png">
+                                <img src="images/development/portfolio/web/1/Code/4.png">
+                                <div class="caption-container">
+                                    <p class="text-header caption-text">Contact Us Page</p>
+                                    <p class="text-medium caption-text">Page for Listing Contact Information & Socials</p>
+                                </div>
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 5</div>
+                                <img src="images/development/portfolio/web/1/faq.png">
+                                <img src="images/development/portfolio/web/1/Code/5.png">
+                                <div class="caption-container">
+                                    <p class="text-header caption-text">FAQ Page</p>
+                                    <p class="text-medium caption-text">Page for Queries & Questions w/ Answers</p>
+                                </div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                    
+                    <div class="spacer-gap"></div>
+
+                    <h2 class="text-header">Key Features and Techniques</h2>
+                    <p class="text-med">
+                        The e-cert generation project utilizes UiPath activities, including Read Range for Excel data, Replace Text in Document for Word editing, and Save Document as PDF for conversion. The workflow is designed to efficiently handle the automation of replacing specific text in a Word document and generating PDFs.
+                    </p>
+
+                    <div class="spacer"></div>
+
+                    <p class="text-med">
+                        Resources from UiPath, such as the Read Range Workbook, For Each Row, Word Application Scope, and Save Document as PDF activities, are employed to create a seamless and reliable automation process.
+                    </p>
+
+                    <div class="spacer-gap"></div>
+
+                    <!-- Final Thoughts -->
+                    <div class="spacer-gap"></div>
+                    <p class="text-header" style="text-decoration: underline;">Final Thoughts...</p>
+                    <p class="text-med">
+                        Reflecting on the e-cert generation project, the integration of UiPath activities not only automated the process but also showcased the power of robotic process automation (RPA) in enhancing workflow efficiency. The project stands as a testament to the successful implementation of automation techniques for accurate and streamlined ecert generation.
+                    </p>
+
+                    <div class="spacer-large"></div>
+
+                    <!-- Add a video if needed -->
+                    <!-- Add a button to go back to the portfolio -->
+                    <a href="portfolio.html" class="btn btn-primary text-medium">Back to Portfolio</a>
+                </div>
+            </section>
+
+            <!-- Footer Bar -->
+            <footer class="custom-footer">
+                <div class="container">
+                    <div class="footer-section">
+                        <h2 class="footer-title">Webpages</h2>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h2 class="footer-title">Portfolio</h2>
+                        <ul class="footer-list">
+                            <li><a href="portfolio.html#design-works-page">Design</a></li>
+                            <li><a href="portfolio.html#development-works-page">Development</a></li>
+                            <li><a href="portfolio.html#other-works-page">Others</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <div class="footer-icons">
+                            <a target="_blank" href="https://github.com/lapidotler" class="text-dark mx-3"><i class="fab fa-github fa-3x"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/irfan-iskandar-sg/" class="text-dark mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a target="_blank" href="https://twitter.com/lapidotler" class="text-dark mx-3"><i class="fab fa-x-twitter fa-3x"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@lapidotler" class="text-dark mx-3"><i class="fab fa-youtube fa-3x"></i></a>
+                        </div>
+                        <p class="copyright-text">Copyright &copy; Irfan Iskandar</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="scripts/gallery.js"></script>
+        <script src="scripts/footer.js"></script>
+    </body>
+</html>
