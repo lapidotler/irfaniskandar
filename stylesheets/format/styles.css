@@ -8,6 +8,7 @@ body {
     overflow-y: scroll;
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: transparent transparent; /* For Firefox */
+    background-color: #dbb5d6;
 }
   
 /* For WebKit browsers (Chrome, Safari) */
@@ -97,22 +98,52 @@ p {
     margin-bottom: 0;
 }
 
-/* Responsive Adjustments */
+/* Existing styles */
+
+/* Responsive Adjustments for Tablet (Portrait) */
 @media (max-width: 768px) {
     /* Adjust font sizes for smaller screens */
     .text-xlarge {
-        font-size: 40px;
+        font-size: 40px!important;
     }
 
     h2, .text-large, .portfolio-option, .text-header {
-        font-size: 30px;
+        font-size: 30px!important;
     }
 
     .text-xnarrow {
-        font-size: 25px;
+        font-size: 25px!important;
     }
 
-    p {
-        font-size: 18px;
+    .text-medium, .text-med, p, .button5 {
+        font-size: 18px!important;
+    }
+
+    .text-small {
+        font-size: 16px!important;
+    }
+}
+
+/* Responsive Adjustments for iPhone (Portrait) */
+@media (max-width: 375px) {
+    /* Adjust font sizes for iPhone-sized screens */
+    .text-xlarge {
+        font-size: 32px!important;
+    }
+
+    h2, .text-large, .portfolio-option, .text-header {
+        font-size: 24px!important;
+    }
+
+    .text-xnarrow {
+        font-size: 20px!important;
+    }
+
+    .text-medium, .text-med, p, .button5 {
+        font-size: 16px!important;
+    }
+
+    .text-small {
+        font-size: 14px!important;
     }
 }

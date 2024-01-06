@@ -9,6 +9,8 @@
 
         <link rel="shortcut icon" type="image/x-icon" href="images/logo_only.png">
 
+        <link rel="stylesheet" type="text/css" href="stylesheets/format/cursor.css"/>
+
         <link rel="stylesheet" type="text/css" href="stylesheets/format/styles.css"/>
         <link rel="stylesheet" type="text/css" href="stylesheets/format/spacer.css"/>
 
@@ -64,6 +66,8 @@
                             <p class="text-xlarge">Portfolio</p>
                         </div>
                     </header>
+
+                    <div id="portfolio-top"></div>
 
                     <div class="section-header responsive">
                         <p class="text-header">My works!</p>
@@ -445,7 +449,11 @@
                 </div>
             </section>
 
-            <div class="spacer"></div>
+            <a href="#portfolio-top" class="arrow-link">
+                <div class="triangle"></div>
+            </a>
+
+            <div class="spacer-large"></div>
 
             <!-- Footer Bar -->
             <footer class="custom-footer">
@@ -478,6 +486,9 @@
                 </div>
             </footer>
         </div>
+
+        <div id="custom-cursor"></div>
+        <script src="scripts/cursor.js"></script>
 
         <script src="scripts/portfolio-filter.js"></script>
         <script src="scripts/footer.js"></script>

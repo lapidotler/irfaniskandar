@@ -1,6 +1,5 @@
 /* About Section */
 .about-section {
-    background-color: #DBB5D6;
     padding: 30px;
     padding-left: 50px;
     padding-right: 50px;
@@ -8,17 +7,21 @@
 
 .about-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
 }
 
 .about-content {
-    width: 55%;
+    max-width: 600px; /* Limit the maximum width for content */
+    margin: 30px;
+    text-align: right;
 }
 
 .about-image-container {
-    flex: 1; /* Take up available space */
     max-width: 400px; /* Limit the maximum width for the image container */
-    margin-left: 20px; /* Add some space between content and image */
+    margin: 20px;
+    margin-right: 40px; /* Add some space between content and image */
     background-color: #BBB3D9;
     border-radius: 20px;
     box-shadow: -20px 20px 1px #9B8EC5;
@@ -28,5 +31,58 @@
 
 .about-image-container img {
     width: 100%; /* Make the image fill the container */
-    border-radius: 15px; /* Add rounded corners */
+    border-radius: 18px; /* Add rounded corners */
+}
+
+
+/* About Box Styles */
+.about-box-container {
+    display: flex;
+    justify-content: space-around; /* Adjust this property as needed */
+    flex-wrap: wrap;
+}
+
+.about-box {
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 10px 10px 2.5px rgba(159, 99, 193, 1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.about-box h3 {
+    color: #333;
+}
+
+.about-box a {
+    color: #007bff;
+}
+
+.about-box .text-medium {
+    font-size: 24px;
+}
+
+.about-box .text-med {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-box .line {
+    margin: 10px 0;
+    border-bottom: 2px solid #333;
+    width: 50px;
+    align-self: center;
+}
+
+/* Media query for screens with a maximum width of 1300px */
+@media (max-width: 1319px) {
+    .about-content {
+        text-align: center!important;
+    }
 }

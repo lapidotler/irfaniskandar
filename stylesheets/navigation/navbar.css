@@ -57,3 +57,7 @@ a {
 .navbar-nav .nav-item .nav-link:hover {
     color: #9f63c1; /* Change the color on hover */
 }
+
+.navbar-nav .nav-item:hover {
+    color: #eee; /* Change the color on hover */
+}

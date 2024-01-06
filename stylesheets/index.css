@@ -16,25 +16,25 @@
 /* About Section */
 .about-section {
     background-color: #DBB5D6;
-    padding: 50px;
+    padding: 30px;
 }
 
 .about-container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .about-content {
-    flex: 1; /* Take up available space */
     max-width: 600px; /* Limit the maximum width for content */
+    margin: 30px;
 }
 
 .about-image-container {
-    flex: 1; /* Take up available space */
     max-width: 400px; /* Limit the maximum width for the image container */
-    margin-left: 20px; /* Add some space between content and image */
+    margin: 20px;
+    margin-left: 40px; /* Add some space between content and image */
     background-color: #BBB3D9;
     border-radius: 20px;
     box-shadow: 20px 20px 1px #9B8EC5;
@@ -189,6 +189,10 @@
 
 
 /* Contact Section */
+.contact-section {
+    margin-top: 20px;
+}
+
 .contact-icons {
     display: flex;
     justify-content: space-around;
@@ -208,12 +212,7 @@
 
 
 /* Media query for screens with a maximum width of 1300px */
-@media (max-width: 1300px) {
-    .about-container {
-        flex-direction: row; /* Change back to row layout for larger screens */
-        justify-content: space-between; /* Add space between content and image */
-    }
-
+@media (max-width: 1303px) {
     .about-image-container {
         order: -1; /* Move the image container to the beginning for small screens */
     }
@@ -245,5 +244,23 @@
 
     .contact-icons a i {
         margin: 10px 0;
+    }
+
+    .portfolio-category, .work-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-card {
+        width: 250px;
+        height: auto;
+    }
+
+    section {
+        padding: 20px;
     }
 }
