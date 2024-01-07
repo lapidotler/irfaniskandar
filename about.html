@@ -83,46 +83,106 @@
 
                 <!-- Skills & Knowledge Section -->
                 <section class="skills-section flex-column responsive" id="skills">
-                    <div class="skills-container">
-                        <div class="skills-content">
-                            <h2 class="text-header">Skills & Knowledge</h2>
-                            <div class="about-box-container">
-                                <!-- Technical Skills Box -->
-                                <div class="about-box">
-                                    <h3 class="text-medium">Technical Skills</h3>
-                                    <div class="line"></div>
-                                    <p class="text-med">Proficient in (Back-End) Web Development (HTML, CSS, Bootstrap, php)</p>
-                                    <p class="text-med">Skilled in Java coding and currently learning Python</p>
-                                    <p class="text-med">Experience with Agile & CI/CD Practices, Mobile Development, and Database Building (SQL)</p>
-                                    <!-- Add more skills as needed -->
-                                </div>
+                    <!-- Skills Bar -->
+                    <h2 class="text-header">Skills & Knowledge</h2>
+                    <p class="text-medium">As someone who has experienced about 2 years into my diploma (D3D), I have inherited TWO particularly important aspects/fields of the diploma that I think is most important.</p>
+                    <p class="text-medium">Below showcases my knowledge & skills of both within a bar, as well as the skills I believe I am most proficient in each field.</p>
 
-                                <!-- Other Technical Skills Box -->
-                                <div class="about-box">
-                                    <h3 class="text-medium">Other Technical Skills</h3>
-                                    <div class="line"></div>
-                                    <p class="text-med">Experience in/will be learning NoSQL, VMware & Cisco Packet Tracer, Linux Scripting</p>
-                                    <p class="text-med">Proficiency in Design Skills (Adobe Illustrator, Photoshop, XD), Front-End Web Development (JavaScript, CSS)</p>
-                                    <p class="text-med">Familiarity with SAS Viya, Power BI, Power Tableau, Jira, Selenium, Google Lighthouse & Google Analytics</p>
-                                    <!-- Add more skills as needed -->
-                                </div>
+                    <div class="flex-row flex-between">
+                        <p class="text-large" onclick="toggleSkills('Developer')">Developer</p>
+                        <p class="text-large" onclick="toggleSkills('Designer')">Designer</p>
+                    </div>
+                    <div class="skills-bar flex-row">
+                        <div class="skills-bar-dev" onclick="toggleSkills('Developer')"></div>
+                        <div class="skills-bar-des" onclick="toggleSkills('Designer')"></div>
+                    </div>
 
-                                <!-- Critical Core Skills Box -->
-                                <div class="about-box">
-                                    <h3 class="text-medium">Critical Core Skills</h3>
-                                    <div class="line"></div>
-                                    <p class="text-med">Acquired skills in Creative Thinking, Problem Solving, Adaptability, Self-Management, Digital Fluency, Learning Agility</p>
-                                    <!-- Add more skills as needed -->
-                                </div>
-                                
-                                <!-- Other Critical Core Skills Box -->
-                                <div class="about-box">
-                                    <h3 class="text-medium">Other Critical Core Skills</h3>
-                                    <div class="line"></div>
-                                    <p class="text-med">Currently learning and adapting to Communication, Teamwork, Time Management, Stress Management, Sense Making</p>
-                                    <!-- Add more skills as needed -->
-                                </div>
+                    <!-- Information Text -->
+                    <div class="flex-row flex-center">
+                        <p class="text-small">Click the section of the bar to view the relevant information!</p>
+                    </div>
+
+                    <!-- Skills Content -->
+                    <div class="skills-content" id="skills-content">
+                        <!-- Developer Skills Text -->
+                        <div id="developer-skills" style="display: none;">
+                            <div class="skills-text-dev">
+                                <p class="text-medium">Most Proficient in:</p>
+                                <p class="text-med">Back-End Web Development (HTML, php)</p>
+                                <p class="text-med">Java & Junit</p>
+                                <p class="text-med">Basic Python</p>
+                                <p class="text-med">Mobile Development</p>
+                                <p class="text-med">Database Building (MySQL)</p>
+                                <!-- Add more skills as needed -->
                             </div>
+                        </div>
+
+                        <!-- Designer Skills Text -->
+                        <div id="designer-skills" style="display: none;">
+                            <div class="skills-text-des">
+                                <p class="text-medium">Most Proficient in:</p>
+                                <p class="text-med">Graphic Design (Adobe Illustrator, Photoshop)</p>
+                                <p class="text-med">UI/UX Design (Adobe XD)</p>
+                                <p class="text-med">Web Styling & Formatting (CSS, Bootstrap)</p>
+                                <!-- Add more skills as needed -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spacer"></div>
+
+                    <div class="about-box-container">
+                        <p class="text-medium">Down here displays the technical & critical core skills I possess/may soon possess.</p>
+
+                        <!-- Technical Skills Box -->
+                        <div class="about-box">
+                            <h3 class="text-medium">Technical Skills</h3>
+                            <div class="line"></div>
+                            <p class="text-med">Proficient in (Back-End) Web Development<br/>(HTML, CSS, Bootstrap, php)</p>
+                            <p class="text-med">Skilled in:<br/>Java coding<br/>Python</p>
+                            <p class="text-med">Experience with:<br/>Agile & CI/CD Practices<br/>Mobile Development<br/>Database Building (SQL)</p>
+                            <!-- Add more skills as needed -->
+                        </div>
+
+                        <!-- Other Technical Skills Box -->
+                        <div class="about-box">
+                            <h3 class="text-medium">Other Technical Skills</h3>
+                            <div class="line"></div>
+                            <p class="text-med">Minor Experience in NoSQL, VMware & Cisco Packet Tracer, Linux Scripting</p>
+                            <p class="text-med">Proficiency in Design Skills (Adobe Illustrator, Photoshop, XD), Front-End Web Development (JavaScript, CSS)</p>
+                            <p class="text-med">Will be Learning:<br/>SAS Viya, Power BI, Power Tableau, Jira, Selenium, Google Lighthouse & Google Analytics</p>
+                            <!-- Add more skills as needed -->
+                        </div>
+
+                        <!-- Critical Core Skills Box -->
+                        <div class="about-box">
+                            <h3 class="text-medium">Critical Core Skills</h3>
+                            <div class="line"></div>
+                            <p class="text-med">Acquired skills in:</p>
+                            <ul class="text-med">
+                                <li>Creative Thinking</li>
+                                <li>Problem Solving</li>
+                                <li>Adaptability</li>
+                                <li>Self-Management</li>
+                                <li>Digital Fluency</li>
+                                <li>Learning Agility</li>
+                            </ul>
+                            <!-- Add more skills as needed -->
+                        </div>
+                        
+                        <!-- Other Critical Core Skills Box -->
+                        <div class="about-box">
+                            <h3 class="text-medium">Other Critical Core Skills</h3>
+                            <div class="line"></div>
+                            <p class="text-med">Currently learning and adapting to:</p>
+                            <ul class="text-med">
+                                <li>Communication</li>
+                                <li>Teamwork</li>
+                                <li>Time Management</li>
+                                <li>Stress Management</li>
+                                <li>Sense Making</li>
+                                <!-- Add more skills as needed -->
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -198,6 +258,7 @@
         <div id="custom-cursor"></div>
         <script src="scripts/cursor.js"></script>
 
+        <script src="scripts/about.js"></script>
         <script src="scripts/footer.js"></script>
     </body>
 </html>

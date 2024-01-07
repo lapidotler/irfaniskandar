@@ -35,11 +35,94 @@
 }
 
 
+
+/* Skills Bar Styles */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-row.flex-center p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skills-content {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    z-index: 1; /* Set a lower z-index for the skills-content */
+}
+
+.skills-bar {
+    margin-top: 10px;
+}
+
+.skills-bar div {
+    height: 30px;
+    cursor: pointer;
+}
+
+.skills-bar-dev {
+    background-color: rgb(123, 104, 184); /* Developer's color */
+    width: 67%;
+    border-radius: 50px 0px 0px 50px;
+    transition: all 0.5s ease;
+}
+
+.skills-bar-des {
+    background-color: rgb(234, 118, 97); /* Designer's color */
+    width: 33%;
+    border-radius: 0px 50px 50px 0px;
+    transition: all 0.5s ease;
+}
+
+.skills-bar-dev:hover {
+    filter:drop-shadow(0px 0px 5px rgba(123, 104, 184, 1));
+}
+
+.skills-bar-des:hover {
+    filter:drop-shadow(0px 0px 5px rgba(234, 118, 97, 1));
+}
+
+.skills-text-dev,
+.skills-text-des {
+    margin-top: 10px;
+    position: relative;
+    z-index: 1; /* Set a lower z-index for the skills-text */
+}
+
+.skills-text-dev {
+    text-align: left;
+}
+
+.skills-text-des {
+    text-align: right;
+}
+
+.skills-text-dev .text-medium, .skills-text-des .text-medium {
+    padding-top: 0;
+}
+
+
 /* About Box Styles */
 .about-box-container {
     display: flex;
     justify-content: space-around; /* Adjust this property as needed */
     flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    background-color: #dbb5d6;
 }
 
 .about-box {
@@ -78,6 +161,16 @@
     border-bottom: 2px solid #333;
     width: 50px;
     align-self: center;
+}
+
+.about-box ul {
+    padding-left: 40px; /* Adjust the padding as needed */
+}
+
+.about-box li {
+    list-style-type: disc!important; /* You can use other values like 'circle', 'square', etc. */
+    margin-bottom: 8px; /* Adjust the margin between list items */
+    text-align: left;
 }
 
 /* Media query for screens with a maximum width of 1300px */
