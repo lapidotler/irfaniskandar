@@ -1,4 +1,4 @@
-body, body a {
+body, body a, body .skills-bar-dev, body .skills-bar-des, body .skills-text-dev, body .skills-text-des {
     cursor: none!important; /* Hide the default cursor */
 }
 

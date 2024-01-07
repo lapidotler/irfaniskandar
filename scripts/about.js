@@ -8,6 +8,20 @@ function toggleSkills(category) {
     } else if (category === 'Designer') {
         toggleContent(desContent, devContent, skillsContent);
     }
+
+    // Check if the clicked category is the currently active one
+    var isSameCategory = (category === 'Developer' && devContent.style.display === 'block') ||
+                         (category === 'Designer' && desContent.style.display === 'block');
+
+    // If it's the same category, close the content
+    if (isSameCategory) {
+        slideUp(isSameCategory ? (category === 'Developer' ? devContent : desContent) : null, skillsContent);
+    } else {
+        // Otherwise, toggle the content as usual
+        toggleContent(category === 'Developer' ? devContent : desContent, 
+                      category === 'Designer' ? devContent : desContent, 
+                      skillsContent);
+    }
 }
 
 function toggleContent(showContent, hideContent, skillsContent) {

@@ -1,3 +1,24 @@
+/* Description of Chosen Work */
+.back-to-category-link {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #343a40;
+}
+
+.triangle {
+    width: 75px;
+    height: 75px;
+    background: #333;
+    clip-path: polygon(50% 0, 100% 50%, 50% 50%, 0 50%);
+    transition: all 0.5s ease;
+    margin: 0 auto; /* Center the triangle horizontally */
+    display: block; /* Ensure it's a block element to center horizontally */
+}
+
+
 /* About Section */
 .about-section {
     padding: 30px;
@@ -16,6 +37,10 @@
     max-width: 600px; /* Limit the maximum width for content */
     margin: 30px;
     text-align: right;
+}
+
+.about-content p {
+    padding-left: 40px;
 }
 
 .about-image-container {
@@ -98,6 +123,7 @@
 .skills-text-dev,
 .skills-text-des {
     margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 1; /* Set a lower z-index for the skills-text */
 }
@@ -167,15 +193,55 @@
     padding-left: 40px; /* Adjust the padding as needed */
 }
 
-.about-box li {
+.about-box li, .about-box p {
     list-style-type: disc!important; /* You can use other values like 'circle', 'square', etc. */
     margin-bottom: 8px; /* Adjust the margin between list items */
     text-align: left;
+}
+
+.about-box p {
+    padding-left: 20px;
+}
+
+.whats-next-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.image-description-container img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 18px; /* Add rounded corners */
 }
 
 /* Media query for screens with a maximum width of 1300px */
 @media (max-width: 1319px) {
     .about-content {
         text-align: center!important;
+    }
+    
+    .about-image-container {
+        margin: 0;
+    }
+
+    .about-content p {
+        padding: 0;
+    }
+}
+
+/* Media query for screens with a maximum width of 785px */
+@media (max-width: 785px) {
+    .skills-text-dev,
+    .skills-text-des {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media (max-width: 500px) {
+    .skills-text-dev,
+    .skills-text-des {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }

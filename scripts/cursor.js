@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cursor.style.opacity = "1";
     });
 
-    document.querySelectorAll('a, button, .portfolio-option').forEach(function (link) {
+    document.querySelectorAll('a, button, .portfolio-option, .skills-bar').forEach(function (link) {
         link.addEventListener('mouseenter', function () {
             cursor.style.transform = "scale(1.75)";
             cursor.style.mixBlendMode = "multiply";
