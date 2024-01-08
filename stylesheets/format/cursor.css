@@ -15,3 +15,10 @@ body, body a, body .skills-bar-dev, body .skills-bar-des, body .skills-text-dev,
     transform: translate(-50%, -50%);
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s;
 }
+
+/* Responsive Adjustments for Tablet (Portrait) */
+@media (max-width: 768px) {
+    #custom-cursor {
+        display: none;
+    }
+}

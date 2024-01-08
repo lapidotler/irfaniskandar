@@ -196,6 +196,7 @@
 .contact-icons {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 
@@ -222,6 +223,7 @@
 @media (max-width: 950px) {
     .header img {
         width: 100%;
+        height: auto;
     }
 
     .about-container {
@@ -238,7 +240,7 @@
 /* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
     .contact-icons {
-        flex-direction: column;
+        margin-top: 25px;
         align-items: center;
     }
 

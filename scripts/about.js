@@ -69,3 +69,41 @@ function slideUp(element, skillsContent, callback) {
         }
     }, 20); // Adjust the interval as needed
 }
+
+function toggleContainer() {
+    var container = document.querySelector('.toggle-container');
+    var buttonText = document.getElementById('toggleButton');
+
+    if (container.style.display === 'none' || container.style.display === '') {
+        // Show container with smooth transition
+        container.style.transition = 'opacity 0.5s, height 0.5s';
+        container.style.display = 'block';
+        container.style.opacity = 1;
+        container.style.height = container.scrollHeight + 'px';
+
+        // Scroll to the toggle-container
+        container.scrollIntoView({ behavior: 'smooth' });
+
+        buttonText.textContent = '<< Hide Extras';
+    } else {
+        // Get the extras-section element
+        var extrasSection = document.querySelector('.extras-section');
+
+        // Hide container with smooth transition
+        container.style.transition = 'opacity 0.5s, height 0.5s';
+        container.style.opacity = 0;
+        container.style.height = 0;
+
+        buttonText.textContent = 'See Other Experiences: Extras >>';
+
+        // Wait for the transition to complete before hiding the container and scrolling to extras-section
+        setTimeout(function () {
+            container.style.display = 'none';
+
+            // Scroll to the top of the extras-section after hiding the container
+            extrasSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 500); // Duration of the transition
+    }
+}
+
+document.getElementById('toggleButton').addEventListener('click', toggleContainer);
