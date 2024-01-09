@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // nav and loading into pages
-    $(".body-content").hide().toggleClass("hidden").delay(300).fadeIn(300);
+    $(".body-content").hide().toggleClass("hidden").fadeIn(500);
     $(".navbar-brand").click(function(e) {
         var nav = $(this);
         var goto = nav.attr("href");

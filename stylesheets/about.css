@@ -89,6 +89,13 @@
     z-index: 1; /* Set a lower z-index for the skills-content */
 }
 
+#text-block {
+    position: relative;
+    background-color: #dbb5d6;
+    margin: 0;
+    z-index: 2; /* Set a lower z-index for the skills-content */
+}
+
 .skills-bar {
     margin-top: 10px;
 }
@@ -205,7 +212,7 @@
 
 
 /* Toggle Button Styles */
-#toggleButton {
+#toggleButton, #portfolioButton {
     font-family: 'Futura Hv BT', sans-serif;
     font-weight: 300;
     font-size: 22px;
@@ -221,9 +228,38 @@
     text-align: center;
     padding-top: 2px;
     margin: 20px;
+    margin-bottom: 0;
 }
 
-#toggleButton:hover {
+.resume-button, .portfolio-button {
+    font-family: 'Futura Hv BT', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+
+    border-radius: 25px;
+    background-color: #b08ccd;
+    border: 2px solid #7869b3;
+
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width for responsiveness */
+    height: 40px;
+
+    text-align: center;
+    padding-top: 2px;
+
+    margin-top: 20px;
+}
+
+.resume-button:hover {
+    background-color: #7869b3; /* Change the background color on hover */
+    color: #EDE7F6; /* Change the text color on hover */
+}
+
+.about-content a {
+    color: #111;
+}
+
+#toggleButton:hover, #portfolioButton:hover {
     background-color: #7869b3; /* Change the background color on hover */
     color: #EDE7F6; /* Change the text color on hover */
 }
